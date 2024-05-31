@@ -6,17 +6,22 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Soluctions from './Components/Soluctions/Soluctions';
 import SoluctionCards from './Components/SoluctionsCards/SoluctionCards';
+// import Testimonial from './Components/Testimonial/Testimonial';
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
-    <>
-    <Header />
-    <Home />
-    <Soluctions />
-    <SoluctionCards />
-    <Benefits />
-    <Contact />
-    </>
+    <div className="bg-[#3E4A89]">
+      <Header />
+      <Home />
+      <Soluctions />
+      <SoluctionCards />
+      <Benefits />
+      <Contact />
+      {/* <Testimonial /> */}
+      <Footer />
+    </div>
   );
 }
 

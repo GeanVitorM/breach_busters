@@ -57,6 +57,11 @@ const SoluctionCards = () => {
                     </div>
                 </div>
             </div>
+            <div className="flex justify-center mt-4">
+                <button className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
+                    BECOME BREACHLESS
+                </button>
+            </div>
         </div>
     );
 };
