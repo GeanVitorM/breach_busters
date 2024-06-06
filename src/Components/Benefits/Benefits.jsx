@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Relogio from "../../Images/relogio.png";
+import Imagem1 from "../../Images/conquista-de-conhecimento.png";
+import Imagem2 from "../../Images/agil.png";
+import Imagem3 from "../../Images/estrutura.png";
 
 const Benefits = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -8,9 +11,9 @@ const Benefits = () => {
   const cardsRef = useRef(null);
 
   const cards = [
-    { id: 1, title: 'Expertise', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.' },
-    { id: 2, title: 'Ofensivo', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.' },
-    { id: 3, title: 'Framework', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.' }
+    { id: 1, title: 'Expertise', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem1 },
+    { id: 2, title: 'Ofensivo', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem2 },
+    { id: 3, title: 'Framework', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem3 }
   ];
 
   useEffect(() => {
@@ -53,11 +56,12 @@ const Benefits = () => {
           </div>
         ))}
       </div>
-      <div className="ml-8 p-4 bg-[#303072] rounded-lg" style={{ width: '45vw', height: '34.3vw' }}>
+      <div className="ml-8 p-4 bg-[#303072] rounded-lg relative" style={{ width: '45vw', height: '34.3vw' }}>
         {selectedCard ? (
           <>
             <h2 className="text-2xl font-bold">{selectedCard.title}</h2>
             <p className="mt-4">{textToShow}</p>
+            <img src={selectedCard.image} className="absolute bottom-4 right-4 w-20 h-20"/>
           </>
         ) : (
           <img src={Relogio} className="flex items-center justify-center w-20 h-20"/>

@@ -1,27 +1,17 @@
-import { SofaIcon } from 'lucide-react';
-import './App.css';
-import Benefits from './Components/Benefits/Benefits';
-import Contact from './Components/Contact/Contact';
-import Header from './Components/Header/Header';
-import Home from './Components/Home/Home';
-import Soluctions from './Components/Soluctions/Soluctions';
-import SoluctionCards from './Components/SoluctionsCards/SoluctionCards';
-// import Testimonial from './Components/Testimonial/Testimonial';
-import Footer from './Components/Footer/Footer';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from './Pages/Main';
+import TesteDi from './Pages/TesteDeIntrução';
 
 function App() {
   return (
-    <div className="bg-[#3E4A89]">
-      <Header />
-      <Home />
-      <Soluctions />
-      <SoluctionCards />
-      <Benefits />
-      <Contact />
-      {/* <Testimonial /> */}
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/TesteDi" element={<TesteDi />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

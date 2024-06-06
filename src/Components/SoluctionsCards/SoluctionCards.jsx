@@ -1,15 +1,15 @@
 import React from 'react';
-import img1 from '../../Images/hacker (1).png';
-import img2 from '../../Images/abra-o-livro.png';
-import img3 from '../../Images/simbolo-de-interface-de-codigo-de-pesquisa-de-uma-lupa-com-numeros-de-codigo-binario.png';
-import img4 from '../../Images/espada.png';
-import img5 from '../../Images/aviao-de-papel.png';
-import img6 from '../../Images/servidor.png';
+import img1 from '../../Images/ataque-cibernetico.png';
+import img2 from '../../Images/abra-o-livro (1).png';
+import img3 from '../../Images/codigo-binario.png';
+import img4 from '../../Images/espada (1).png';
+import img5 from '../../Images/aviao-de-papel (1).png';
+import img6 from '../../Images/apoio-suporte.png';
 
 const SoluctionCards = () => {
     return (
         <div className="bg-[#3E4A89] text-white">
-            <div className="container mx-auto py-8">
+            <div className="container mx-auto py4   ">
                 <div className="text-center mb-4">
                     <h1 className="text-3xl font-bold">Soluções</h1>
                     <p className="text-lg">

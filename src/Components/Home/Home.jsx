@@ -1,5 +1,5 @@
 import React from 'react';
-import illustration from '../../Images/Security On-bro.png'; // Update the path accordingly
+import illustration from '../../Images/Security On-bro.png'; 
 
 const Home = () => {
   return (
