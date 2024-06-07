@@ -12,7 +12,14 @@ function Main() {
   return (
     <div className="bg-[#3E4A89]">
       <Header bgColor="bg-[#202444]"/>
-      <Home />
+      <Home bgColor="bg-[#202444]"
+            title="Start Bust
+                    into the
+                    Unexplored" 
+            subTitle="Unexplored."
+            text="Conte com profissionais dedicados para identificar brechas no seu 
+                  ambiente e receba relatórios personalizados com informações relevantes para 
+                  o seu negócio!"/>
       <Soluctions />
       <SoluctionCards />
       <Benefits />
