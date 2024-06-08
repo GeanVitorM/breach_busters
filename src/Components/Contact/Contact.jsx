@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center py-20 bg-black w-full">
+    <div id="contact" className="flex justify-center items-center py-20 bg-black w-full">
       <div className="text-white max-w-5xl w-full px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-8 text-center">Vamos realizar um pentesting.</h1>
         <div className="flex justify-center items-center mb-8">

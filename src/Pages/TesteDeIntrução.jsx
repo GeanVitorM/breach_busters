@@ -1,32 +1,29 @@
 import React from 'react';
 import Home from '../Components/Home/Home';
-import BannerTs from '../Components/CardsTesteDi/BannerTs';
+import BannerTs from '../Components/BannerSoluctions/BannerSoluctions';
 import Header from '../Components/Header/Header';
-import BenefitsTdi from '../Components/BenefictTestDi/BenefictsTdi';
-import MethodologyComponent from '../Components/MetodotologiSection/Metodologi';
 import Contact from '../Components/Contact/Contact';
-import EthicalHacking from '../Components/BannerHacking/EthicalHacking';
+import BannerServices from '../Components/BannerServices/BannerServices';
 import Footer from '../Components/Footer/Footer';
+import BenefictsServices from '../Components/BenefictsServices/BenefictsServices';
+import Methodologies from '../Components/Methodologies/Methodologies';
+import { MethodologiesData, TitleHomeTI, bannerItems, benefitsData, bgColorHeader, bgColorTIHeader, bgColorTIHome, ethicalHackingContent, homeTextTI, homeTitle, linkHeaderTI } from './Config';
+import BannerSoluctions from '../Components/BannerSoluctions/BannerSoluctions';
+
 
 const TesteDi = () => {
   return (
     <>
-      <Header bgColor="bg-[#141414]" />
-      <Home bgColor="bg-[#141414]"
-            title="Teste
-            De
-            Intrusão."
-            text="Ao digitalizar sua presença, você se expõe a riscos invisíveis, com potenciais 
-                  vulnerabilidades sendo alvo de cibercriminosos, ameaçando seus clientes, parceiros e a 
-                  operação do negócio. Para atender aos padrões regulatórios e proteger sua reputação, é 
-                  crucial ter uma equipe de especialistas em segurança cibernética. Eles aplicam técnicas 
-                  avançadas e conhecimento especializado para identificar e corrigir vulnerabilidades, 
-                  fortalecendo sua infraestrutura digital."/>
-      <BannerTs />
-      <BenefitsTdi />
-      <MethodologyComponent />
+      <Header bgColor={bgColorTIHeader}
+        linkContact={linkHeaderTI}/>
+      <Home bgColor={bgColorTIHome}
+        title={TitleHomeTI}
+        text={homeTextTI}/>
+      <BannerSoluctions bannerItems={bannerItems}/>
+      <BenefictsServices benefitsData={benefitsData} />
+      <Methodologies content={MethodologiesData} />
       <Contact />
-      <EthicalHacking />
+      <BannerServices {...ethicalHackingContent}/>
       <Footer />
     </>
   );

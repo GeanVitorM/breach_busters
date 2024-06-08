@@ -5,14 +5,16 @@ import ValuesAndZens from "../Components/ValuesAndZen/ValuesAndZen";
 import BlackSection from "../Components/BlackSection/BlackSection";
 import Identified from "../Components/Identified/Identified";
 import Footer from "../Components/Footer/Footer";
+import { AboutBgColorHome, AboutbgColorHeader, aboutTitle, linkHeader } from "./Config";
 
 const About = () => {
     return (
         <>
-            <Header bgColor="bg-[#202444]" />
-            <Home bgColor="bg-[#202444]"
-                title="Buscando um mundo digitalmente seguro...   "
-                text="" />
+            <Header bgColor={AboutbgColorHeader}
+                linkContact={linkHeader} />
+            <Home bgColor={AboutBgColorHome}
+                title={aboutTitle}
+            />
             <AboutBB />
             <ValuesAndZens />
             <BlackSection />

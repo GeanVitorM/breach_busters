@@ -6,7 +6,7 @@ const Home = ({ bgColor , title, text }) => {
     <div className={`flex items-center justify-center min-h-screen ${bgColor} text-white`}>
       <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-4 py-12">
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mt-20 mb-4">
             {title}
           </h1>
           <p className="text-lg mb-8">
