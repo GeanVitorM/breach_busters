@@ -12,9 +12,9 @@ const Home = ({ bgColor , title, text }) => {
           <p className="text-lg mb-8">
            {text}
           </p>
-          <button className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
+          <a href="#contact" className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
             BECOME BREACHLESS
-          </button>
+          </a>
         </div>
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
           <img src={illustration} alt="Illustration" className="w-2/3 md:w-full" />

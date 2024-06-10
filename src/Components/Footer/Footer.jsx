@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import skeletonLogo from '../../Images/Icone_Fundo_Transparente.png'; // Substitua pelo caminho correto da sua imagem
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className="mx-4">
                             <h4 className="font-bold">sobre</h4>
                             <ul>
-                                <li>About</li>
+                                <a href="/About"><li>About</li></a>
                             </ul>
                         </div>
                         <div className="mx-4">
@@ -33,12 +33,12 @@ const Footer = () => {
                         <div className="mx-4">
                             <h4 className="font-bold">Soluções</h4>
                             <ul>
-                                <li>Pentesting</li>
-                                <li>Red Team</li>
-                                <li>Treinamentos</li>
-                                <li>Phishing</li>
-                                <li>DDoS</li>
-                                <li>Engenharia reversa</li>
+                                <a href="/Soluctions/teste-de-intrusao" ><li>Teste de Intrusão</li></a>
+                                <a href="/Soluctions/Red-Team" ><li>Red Team</li></a>
+                                <a href="/Soluctions/treinamentos" ><li>Treinamentos</li></a>
+                                <a href="/Soluctions/pishing" ><li>Phishing</li></a>
+                                <a href="" ><li>DDoS</li></a>
+                                <a href="/Soluctions/Engenharia-reversa" ><li>Engenharia reversa</li></a>
                             </ul>
                         </div>
                         <div className="mx-4">
@@ -51,15 +51,15 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col items-center md:items-start mt-8 px-20">
                     <div className="flex space-x-4 mb-4 w-full justify-start">
-                        <FaFacebook className="text-xl cursor-pointer" />
-                        <FaTwitter className="text-xl cursor-pointer" />
-                        <FaInstagram className="text-xl cursor-pointer" />
+                        <a href="" > <FaLinkedin className="text-xl cursor-pointer" /></a>
+                        <a href="" > <FaYoutube className="text-xl cursor-pointer" /></a>
+                        <a href="" > <FaInstagram className="text-xl cursor-pointer" /></a>
                     </div>
                     <div className="w-full border-3 border-white-100 py-4 text-center text-sm text-gray-500 border-t-4 border-white mt-4 flex justify-between">
                         <div className="flex flex-wrap space-x-2">
-                            <a href="#!" className="hover:underline">Política</a>
-                            <a href="#!" className="hover:underline">Termos</a>
-                            <a href="#!" className="hover:underline">Privacidade</a>
+                            <a href="/Policy" className="hover:underline">Política</a>
+                            <a href="/Terms" className="hover:underline">Termos</a>
+                            <a href="/Privace" className="hover:underline">Privacidade</a>
                             <a href="#!" className="hover:underline">Segurança</a>
                         </div>
                         <p>&copy; Breach buster todos os direitos reservados</p>

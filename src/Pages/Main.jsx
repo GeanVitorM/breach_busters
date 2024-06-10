@@ -7,19 +7,20 @@ import Home from '../Components/Home/Home';
 import Soluctions from '../Components/Soluctions/Soluctions';
 import SoluctionCards from '../Components/SoluctionsCards/SoluctionCards';
 import Footer from '../Components/Footer/Footer';
-import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, subTitle } from './Config';
+import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, soluctionCards, subTitle, textColorHeader } from './Config';
 
 function Main() {
   return (
     <div className="bg-[#3E4A89]">
       <Header bgColor={bgColorHeader}
-        linkContact={linkHeader} />
+        linkContact={linkHeader} 
+        textColor={textColorHeader}/>
       <Home bgColor={bgColorHome}
         title={homeTitle}
         subTitle={subTitle}
         text={homeText} />
       <Soluctions />
-      <SoluctionCards />
+      <SoluctionCards soluctionData={soluctionCards} />
       <Benefits />
       <Contact />
       <Footer />
