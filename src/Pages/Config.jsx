@@ -23,9 +23,9 @@ import img5 from './../Images/aviao-de-papel (1).png';
 import img6 from './../Images/apoio-suporte.png';
 
 //Main page
-export const homeTitle = "Start Bust into the Unexplored";
-export const bgColorHome = "bg-[#202444]";
-export const bgColorHeader = "bg-[#202444]";
+export const homeTitle = "Start Bust into the";
+export const bgColorHome = "bg-[#34347c]";
+export const bgColorHeader = "bg-[#34347c]";
 export const textColorHeader = "text-white"
 export const linkHeader = "#contact";
 export const subTitle = "Unexplored.";

@@ -11,7 +11,7 @@ import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, soluctionC
 
 function Main() {
   return (
-    <div className="bg-[#3E4A89]">
+    <div className="bg-[#202444]">
       <Header bgColor={bgColorHeader}
         linkContact={linkHeader} 
         textColor={textColorHeader}/>

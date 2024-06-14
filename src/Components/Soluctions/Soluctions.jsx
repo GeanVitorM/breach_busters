@@ -5,10 +5,10 @@ import icone3 from '../../Images/jogos.png';
 
 const Soluctions = () => {
     return (
-        <div className="flex flex-col items-center bg-[#3E4A89] pt-20 text-white">
-            <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4">Soluções personalizáveis Para Todas As Empresas</h1>
+        <div className="flex flex-col items-center bg-[#202444] pt-20 text-white">
+            <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4">Soluções personalizáveis Para <span className="text-[#d11c9b]">Todas</span> As Empresas</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-20 px-4 w-full max-w-screen-xl">
-                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#3E4A89]">
+                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#202444]">
                     <div className=" z-10 p-5 rounded-lg">
                         <div className="mb-5">
                             <img
@@ -18,10 +18,11 @@ const Soluctions = () => {
                             />
                         </div>
                         <h2 className="text-lg font-semibold mb-2">Visibilidade</h2>
-                        <p>Lorem ipsum massa auctor volutpat bibendum alesuada Lorem ipsum massa.</p>
+                        <p>Tenha visibilidade das brechas e vulnerabilidades do seu ambiente para tomar
+                            medidas proativas e mitigar possíveis riscos de segurança.</p>
                     </div>
                 </div>
-                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#3E4A89]">
+                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#202444]">
                     <div className=" z-10 p-5 rounded-lg">
                         <div className="mb-5">
                             <img
@@ -31,10 +32,11 @@ const Soluctions = () => {
                             />
                         </div>
                         <h2 className="text-lg font-semibold mb-2">Segurança</h2>
-                        <p>Lorem ipsum massa auctor volutpat bibendum alesuada Lorem ipsum massa.</p>
+                        <p>Implemente práticas de segurança avançadas para proteger seus sistemas contra ameaças
+                            cibernéticas, garantindo a integridade, confidencialidade e disponibilidade dos dados.</p>
                     </div>
                 </div>
-                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#3E4A89]">
+                <div className=" text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#202444]">
                     <div className=" z-10 p-5 rounded-lg">
                         <div className="mb-5">
                             <img
@@ -44,7 +46,8 @@ const Soluctions = () => {
                             />
                         </div>
                         <h2 className="text-lg font-semibold mb-2">Controle</h2>
-                        <p>Lorem ipsum massa auctor volutpat bibendum alesuada Lorem ipsum massa.</p>
+                        <p>Retome o controle do seu negócio, recupere o poder de direcionar os investimentos de
+                            segurança protegendo o que é mais valioso para sua empresa.</p>
                     </div>
                 </div>
             </div>

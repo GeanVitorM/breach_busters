@@ -1,15 +1,16 @@
 import React from 'react';
 
-const SoluctionCards = ({soluctionData}) => {
+const SoluctionCards = ({ soluctionData }) => {
     return (
-        <div id="solucoes" className="bg-[#3E4A89] text-white">
+        <div id="solucoes" className="bg-[#202444] text-white">
             <div className="container mx-auto py-4">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold">Soluções</h1>
                     <p className="text-lg">
-                        Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio,
-                        nostra tortor quisque eros bibendum aliquam tempus semper eleifend,
-                        etiam ligula.
+                        Realize testes e forneça sistemas de alta qualidade e segurança.
+                        Simplifique o processo desde o desenvolvimento até a produção.
+                        Obtenha insights profundos, identifique vulnerabilidades, priorize
+                        brechas e corrija erros rapidamente.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

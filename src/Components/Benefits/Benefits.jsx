@@ -11,9 +11,9 @@ const Benefits = () => {
   const cardsRef = useRef(null);
 
   const cards = [
-    { id: 1, title: 'Expertise', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem1 },
-    { id: 2, title: 'Ofensivo', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem2 },
-    { id: 3, title: 'Framework', content: 'Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula. Lorem ipsum massa auctor volutpat bibendum malesuada vitae odio, nostra tortor quisque eros bibendum aliquam tempus semper eleifend, etiam ligula.', image: Imagem3 }
+    { id: 1, title: 'Por Que', subTitle: 'Saiba porque a Breach Busters é a escolha ideal',  content: 'A Breach Busters domina o mercado Brasileiro e entende o contexto de segurança, aliamos paixão experiência e expertise formando uma trindade perfeita para ajudar o seu negocio a ser mais seguro.', image: Imagem1 },
+    { id: 2, title: 'Privacidade', subTitle: 'Projetos em nivel TOP SECRET.', content: 'Seus dados estão seguros conosco, temos politicas severas a respeito dos dados dos nossos clientes e em breve atestaremos essas politicas com certificações como a 27001.Confidencialidade: Os projetos são confidenciais e somente para pessoas autorizadas. Todos os dados passam pelo processo de tratamento, tendo como fim sua destruição total.', image: Imagem2 },
+    { id: 3, title: 'Profissionais',subTitle: 'Apaixonados pelo que fazem, e relevante pelo que entregam.', content: 'Somos fascinados pelo nosso trabalho, contamos com vasta experiência e certificados relevantes do mercado.Nosso time participa ativamente de comunidades, projetos open source e disseminam o conhecimento em prol de uma Internet mais segura ', image: Imagem3 }
   ];
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Benefits = () => {
   };
 
   return (
-    <div className="flex justify-center items-start py-4 bg-[#3E4A89] text-white w-full mt-4">
+    <div className="flex justify-center items-start py-4 bg-[#202444] text-white w-full mt-4">
       <div ref={cardsRef} className="w-1/3 space-y-4">
         {cards.map(card => (
           <div
@@ -51,7 +51,7 @@ const Benefits = () => {
           >
             <div>
               <h2 className="text-2xl font-bold">{card.title}</h2>
-              <p className="text-sm">lorem</p>
+              <p className="text-sm">{card.subTitle}</p>
             </div>
           </div>
         ))}
