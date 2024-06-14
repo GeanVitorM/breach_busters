@@ -51,7 +51,7 @@ const Header = ({ bgColor, textColor, linkContact }) => {
                 </div>
             </div>
             {/* Drawer para dispositivos móveis */}
-            <div className={`fixed top-0 right-0 h-full w-full md:w-64 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20`}>
+            <div className={`fixed top-0 right-0 h-full w-64 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20`}>
                 <div className="flex justify-end p-4">
                     <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className="focus:outline-none">
                         <HiX className="w-8 h-8 text-white" />
