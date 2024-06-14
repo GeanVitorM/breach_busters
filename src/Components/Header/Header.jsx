@@ -9,7 +9,9 @@ const Header = ({ bgColor, textColor, linkContact }) => {
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
             <div className={`flex justify-between items-center px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
                 <div className="flex items-center">
-                    <a href="/"><img src={Icone} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" /></a>
+                    <a href="/">
+                        <img src={Icone} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
+                    </a>
                     <div className={`hidden md:block mx-4 border-l-2 h-8 md:h-12 ${textColor}`}></div>
                     <a href="/">
                         <h1 className="text-lg md:text-xl font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
@@ -51,31 +53,31 @@ const Header = ({ bgColor, textColor, linkContact }) => {
                 </div>
             </div>
             {/* Drawer para dispositivos móveis */}
-            <div className={`fixed top-0 right-0 h-full w-64 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20`}>
+            <div className={`fixed top-0 right-0 h-full max-w-xs w-full bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20`}>
                 <div className="flex justify-end p-4">
                     <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className="focus:outline-none">
                         <HiX className="w-8 h-8 text-white" />
                     </button>
                 </div>
-                <nav className={`flex flex-col items-center py-4 text-white`}>
+                <nav className="flex flex-col items-center py-4 text-white">
                     <ul className="flex flex-col space-y-4 text-center font-bold" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
                         <li>
-                            <a href="/About" className="hover:text-gray-300">
+                            <a href="/About" className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>
                                 Sobre
                             </a>
                         </li>
                         <li>
-                            <a href="#blog" className="hover:text-gray-300">
+                            <a href="#blog" className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>
                                 Blog
                             </a>
                         </li>
                         <li>
-                            <a href="#solucoes" className="hover:text-gray-300">
+                            <a href="#solucoes" className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>
                                 Soluções
                             </a>
                         </li>
                         <li>
-                            <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full">
+                            <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMenuOpen(false)}>
                                 Contact Us
                             </a>
                         </li>

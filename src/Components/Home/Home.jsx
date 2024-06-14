@@ -19,7 +19,7 @@ const Home = ({ bgColor, title, subTitle, text }) => {
             BECOME BREACHLESS
           </a>
         </div>
-        <div className="md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+        <div className="md:w-2/3 flex items-center justify-center mt-8 md:mt-0"> {/* Alterado para md:w-2/3 */}
           <img src={illustration} alt="Illustration" className="w-2/3 md:w-full" />
         </div>
       </div>
