@@ -1,44 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import errorImg from '../../Images/erro.png';
 import successImg from '../../Images/aceitaram.png';
 
 const Contact = () => {
-  const [email, setEmail] = useState('');
-  const [showCursor, setShowCursor] = useState(true);
-  const [status, setStatus] = useState(null); // Para armazenar o status do envio
-  const [progress, setProgress] = useState(50); // Estado para controlar a largura da barra de progresso
+  const [formData, setFormData] = useState({
+    email: '',
+  });
+  const [status, setStatus] = useState(null);
+  const [progress, setProgress] = useState(50);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
-    return () => clearInterval(intervalId);
-  }, []);
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
-  const handleKeyDown = async (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      setStatus('sending');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
 
-      try {
-        const response = await fetch('https://api.example.com/send-email', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ email })
-        });
+    try {
+      const response = await fetch('http://localhost:8000/Server/mail-send.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(formData).toString()
+      });
 
-        if (response.ok) {
-          setStatus('success');
-          setEmail(''); // Limpa o campo de e-mail após o envio bem-sucedido
-          setProgress(100); // Aumenta a largura da barra de progresso para 100%
-        } else {
-          setStatus('error');
-        }
-      } catch (error) {
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ email: '' });
+        setProgress(100);
+      } else {
         setStatus('error');
       }
+    } catch (error) {
+      setStatus('error');
     }
   };
 
@@ -48,7 +47,7 @@ const Contact = () => {
         <h1 className="text-4xl font-bold mb-8 text-center">Vamos realizar um pentesting.</h1>
         <div className="flex justify-center items-center mb-8">
           <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden">
-            <div 
+            <div
               className="h-full bg-pink-500 flex items-center justify-end pr-2 transition-width duration-300"
               style={{ width: `${progress}%` }}
             >
@@ -64,19 +63,18 @@ const Contact = () => {
             </p>
           </div>
           <div className="w-1/2">
-            <form className="relative">
-              <label className="block text-lg font-medium mb-2" htmlFor="email">
+            <form className="relative" onSubmit={handleSubmit}>
+              <label className="block text-lg font-medium mb-2 mt-4" htmlFor="email">
                 Qual é o seu e-mail empresarial?
               </label>
               <input
                 className="w-full p-4 rounded-lg text-black bg-white border border-black placeholder-transparent focus:outline-none"
                 type="email"
                 id="email"
-                placeholder="|"
-                style={{ caretColor: 'transparent' }}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onKeyDown={handleKeyDown}
+                name="email"
+                placeholder="E-mail"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
               <p className="text-xs text-white mt-2">
@@ -93,7 +91,6 @@ const Contact = () => {
               {status === 'sending' && (
                 <p className="text-yellow-500 mt-4">
                   Enviando...
-                  <img src={errorImg} alt="Enviando" className="inline-block ml-2 w-6 h-6" />
                 </p>
               )}
               {status === 'success' && (
