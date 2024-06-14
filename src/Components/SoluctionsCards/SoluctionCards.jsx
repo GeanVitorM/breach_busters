@@ -1,13 +1,10 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useMediaQuery } from 'react-responsive';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
 const SoluctionCards = ({ soluctionData }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 }); // Detectar se a largura da tela é menor ou igual a 767px
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
         <div id="solucoes" className="bg-[#202444] text-white">
@@ -23,32 +20,34 @@ const SoluctionCards = ({ soluctionData }) => {
                 </div>
                 {isMobile ? (
                     <Swiper
-                        spaceBetween={30}
+                        spaceBetween={16}
                         slidesPerView={1}
-                        navigation
+                        centeredSlides={true}
                         pagination={{ clickable: true }}
-                        modules={[Navigation, Pagination]}
+                        loop={true}
                     >
                         {soluctionData.map(card => (
                             <SwiperSlide key={card.id}>
-                                <a
-                                    href={card.link}
-                                    className="rounded-lg p-6 flex bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg hover:bg-opacity-20 hover:backdrop-blur-xl transition duration-300"
-                                >
-                                    <img
-                                        src={card.image}
-                                        alt={`Imagem ${card.id}`}
-                                        className="w-20 h-20 object-cover mr-4 rounded-lg"
-                                    />
-                                    <div className="w-2/3">
-                                        <p className="text-lg font-semibold mb-2">{card.title}</p>
-                                    </div>
-                                </a>
+                                <div className="flex justify-center">
+                                    <a
+                                        href={card.link}
+                                        className="rounded-lg p-4 flex bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg hover:bg-opacity-20 hover:backdrop-blur-xl transition duration-300 w-64"
+                                    >
+                                        <img
+                                            src={card.image}
+                                            alt={`Imagem ${card.id}`}
+                                            className="w-16 h-16 object-cover mr-4 rounded-lg"
+                                        />
+                                        <div className="flex-1">
+                                            <p className="text-base font-semibold mb-2">{card.title}</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                         {soluctionData.map(card => (
                             <a
                                 key={card.id}
@@ -60,7 +59,7 @@ const SoluctionCards = ({ soluctionData }) => {
                                     alt={`Imagem ${card.id}`}
                                     className="w-20 h-20 object-cover mr-4 rounded-lg"
                                 />
-                                <div className="w-2/3">
+                                <div className="flex-1">
                                     <p className="text-lg font-semibold mb-2">{card.title}</p>
                                 </div>
                             </a>
