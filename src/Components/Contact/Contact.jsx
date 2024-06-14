@@ -21,7 +21,7 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      const response = await fetch('http://localhost:8000/Server/mail-send.php', {
+      const response = await fetch('https://breach-busters.vercel.app/:8000/Server/mail-send.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
