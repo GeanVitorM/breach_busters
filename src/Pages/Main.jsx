@@ -8,6 +8,7 @@ import Soluctions from '../Components/Soluctions/Soluctions';
 import SoluctionCards from '../Components/SoluctionsCards/SoluctionCards';
 import Footer from '../Components/Footer/Footer';
 import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, soluctionCards, subTitle, textColorHeader } from './Config';
+import ClientCarrossel from '../Components/ClientCarrosel/ClienteCarrosel';
 
 function Main() {
   return (
@@ -23,6 +24,7 @@ function Main() {
       <SoluctionCards soluctionData={soluctionCards} />
       <Benefits />
       <Contact />
+      <ClientCarrossel />
       <Footer />
     </div>
   );

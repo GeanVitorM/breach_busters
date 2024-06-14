@@ -2,7 +2,7 @@ import React from 'react';
 
 const Methodologies = ({ content }) => {
     return (
-        <div className="bg-[#3E4A89] py-16">
+        <div className="bg-[#38347c] py-16">
             <div className="container mx-auto flex flex-col gap-6">
                 {content.map((section, index) => {
                     const isReverse = index % 2 !== 0;

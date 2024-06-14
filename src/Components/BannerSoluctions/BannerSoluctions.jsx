@@ -3,7 +3,7 @@ import React from 'react';
 
 const BannerSoluctions = ({ bannerItems }) => {
   return (
-    <div className="flex flex-col items-center bg-[#141414] text-white">
+    <div className="flex flex-col items-center bg-[#000000] text-white">
       <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4">
         Soluções personalizáveis Para Todas As Empresas
       </h1>
@@ -11,7 +11,7 @@ const BannerSoluctions = ({ bannerItems }) => {
         {bannerItems.map((item, index) => (
           <div
             key={index}
-            className="text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#141414]"
+            className="text-center p-5 rounded-lg transition duration-300 hover:bg-white/20 hover:backdrop-filter hover:backdrop-blur-lg bg-opacity-90 bg-[#000000]"
           >
             <div className="z-10 p-5 rounded-lg">
               <div className="mb-5">

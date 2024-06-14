@@ -2,7 +2,7 @@ import React from 'react';
 
 const Identified = () => {
     return (
-        <div className="bg-[#38347c] text-white py-12 px-6 text-center">
+        <div className="bg-[#202444] text-white py-12 px-6 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Se identificou?</h1>
             <p className="text-lg md:text-2xl mb-2">Gostaria de fazer parte do time?</p>
             <p className="text-lg md:text-2xl mb-2">Nossos valores batem com os seus?</p>

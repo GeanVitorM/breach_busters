@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutBB = () => {
     return (
-        <div className="bg-[#38347c] text-white py-12 px-6 text-center">
+        <div className="bg-[#202444] text-white py-12 px-6 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-10">Sobre a Breach Busters</h1>
             <p className="max-w-2xl mx-auto mb-8 leading-relaxed text-lg md:text-xl">
                 A Breach Busters é uma empresa de tecnologia brasileira focada no segmento de segurança ofensiva,

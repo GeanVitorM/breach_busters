@@ -41,8 +41,8 @@ export const soluctionCards = [
 
 //About Page
 export const aboutTitle = "Buscando um mundo digitalmente seguro...";
-export const AboutbgColorHeader = "bg-[#202444]";
-export const AboutBgColorHome = "bg-[#202444]";
+export const AboutbgColorHeader = "bg-[#34347c]";
+export const AboutBgColorHome = "bg-[#34347c]";
 export const textColorAbout = "text-white"
 export const linkHeaderAbout = "#contact";
 export const subTitleAbout = "";
@@ -50,8 +50,8 @@ export const homeTextAbout = "Conte com profissionais dedicados para identificar
 
 //Teste de intrusão
 export const TitleHomeTI = "Teste De Intrusão.";
-export const bgColorTIHeader = "bg-[#141414]";
-export const bgColorTIHome = "bg-[#141414]";
+export const bgColorTIHeader = "bg-[#000000]";
+export const bgColorTIHome = "bg-[#000000]";
 export const textColorTI = "text-white"
 export const linkHeaderTI = "/";
 export const subTitleTI = "";
