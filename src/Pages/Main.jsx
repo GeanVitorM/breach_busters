@@ -14,8 +14,8 @@ function Main() {
   return (
     <div className="bg-[#202444]">
       <Header bgColor={bgColorHeader}
-        linkContact={linkHeader} 
-        textColor={textColorHeader}/>
+        linkContact={linkHeader}
+        textColor={textColorHeader} />
       <Home bgColor={bgColorHome}
         title={homeTitle}
         subTitle={subTitle}
@@ -24,7 +24,7 @@ function Main() {
       <SoluctionCards soluctionData={soluctionCards} />
       <Benefits />
       <Contact />
-      <ClientCarrossel />
+      {/* <ClientCarrossel /> */}
       <Footer />
     </div>
   );
