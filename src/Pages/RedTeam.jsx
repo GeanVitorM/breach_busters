@@ -6,14 +6,15 @@ import Methodologies from '../Components/Methodologies/Methodologies';
 import Contact from '../Components/Contact/Contact';
 import BannerServices from '../Components/BannerServices/BannerServices';
 import Footer from '../Components/Footer/Footer';
-import { TitleHomeRT, bannerItemsRT, benefitsDataRT, bgColorERHome, bgColorRTHeader, homeTextRT, linkHeaderRT , MethodologiesDataRT, ethicalHackingContentRT, textColorRT} from './Config';
+import { TitleHomeRT, bannerItemsRT, benefitsDataRT, bgColorERHome, bgColorRTHeader, homeTextRT, linkHeaderRT , MethodologiesDataRT, ethicalHackingContentRT, textColorRT, soluctionLinksRT} from './Config';
 
 const RedTeam = () => {
     return (
         <>
             <Header bgColor={bgColorRTHeader}
                 linkContact={linkHeaderRT} 
-                textColor={textColorRT}/>
+                textColor={textColorRT}
+                soluctionLinks={soluctionLinksRT}/>
             <Home bgColor={bgColorERHome}
                 title={TitleHomeRT} 
                 text={homeTextRT}/>

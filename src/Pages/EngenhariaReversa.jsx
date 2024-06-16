@@ -3,7 +3,7 @@ import Header from "../Components/Header/Header";
 import Home from "../Components/Home/Home";
 import Methodologies from "../Components/Methodologies/Methodologies";
 import Contact from "../Components/Contact/Contact";
-import { MethodologiesDataER, TitleHomeER, benefitsDataER, bgColorERHeader, bgColorERHome, ethicalHackingContentER, homeTextER, linkHeaderER, textColorER } from "./Config";
+import { MethodologiesDataER, MethodologiesDataTI, TitleHomeER, benefitsDataER, bgColorERHeader, bgColorERHome, ethicalHackingContentER, homeTextER, linkHeaderER, soluctionLinksER, textColorER } from "./Config";
 import BannerServices from "../Components/BannerServices/BannerServices";
 import Footer from "../Components/Footer/Footer";
 
@@ -12,7 +12,8 @@ const EngenhariaReversa = () => {
         <>
             <Header bgColor={bgColorERHeader}
                 linkContact={linkHeaderER} 
-                textColor={textColorER}/>
+                textColor={textColorER}
+                soluctionLinks={soluctionLinksER}/>
             <Home bgColor={bgColorERHome}
                 title={TitleHomeER}
                 text={homeTextER} />

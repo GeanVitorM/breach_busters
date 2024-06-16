@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
 import Icone from '../../Images/Icone_Fundo_Transparente.png';
 
-const Header = ({ bgColor, textColor, linkContact }) => {
+const Header = ({ bgColor, textColor, linkContact, soluctionLinks = [] }) => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [solucoesOpen, setSolucoesOpen] = useState(false);
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
@@ -78,9 +79,32 @@ const Header = ({ bgColor, textColor, linkContact }) => {
                             </a>
                         </li>
                         <li>
-                            <a href="#solucoes" className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>
+                            <button
+                                className="hover:text-gray-300 flex items-center justify-center w-full text-center"
+                                onClick={() => setSolucoesOpen(!solucoesOpen)}
+                            >
                                 Soluções
-                            </a>
+                                <svg
+                                    className={`w-5 h-5 ml-1 transform ${solucoesOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            {solucoesOpen && (
+                                <ul className="mt-2 space-y-2">
+                                    {soluctionLinks.map((link, index) => (
+                                        <li key={index}>
+                                            <a href={link.href} className="hover:text-gray-300 block text-center" onClick={() => setMenuOpen(false)}>
+                                                {link.text}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </li>
                         <li>
                             <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMenuOpen(false)}>

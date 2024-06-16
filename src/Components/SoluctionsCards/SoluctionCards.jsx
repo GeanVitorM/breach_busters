@@ -29,14 +29,14 @@ const SoluctionCards = ({ soluctionData }) => {
                     >
                         {soluctionData.map(card => (
                             <SwiperSlide key={card.id}>
-                                <div className="flex flex-col items-center">
+                                <a href={card.link} className="flex flex-col items-center">
                                     <p className="text-lg font-semibold mb-2">{card.title}</p>
                                     <img
                                         src={card.image}
                                         alt={`Imagem ${card.id}`}
                                         className="w-32 h-32 object-cover rounded-lg"
                                     />
-                                </div>
+                                </a>
                             </SwiperSlide>
                         ))}
                     </Swiper>

@@ -35,8 +35,17 @@ export const soluctionCards = [
     { id: 2, title: 'Treinamentos', image: img2, link: '/Soluctions/treinamentos' },
     { id: 3, title: 'Engenharia Reversa', image: img3, link: '/Soluctions/engenharia-reversa' },
     { id: 4, title: 'Red Team', image: img4, link: '/Soluctions/red-team' },
-    { id: 5, title: 'Phishing', image: img5, link: '/Soluctions/phishing' },
+    { id: 5, title: 'Phishing', image: img5, link: '/Soluctions/pishing' },
     { id: 6, title: 'Teste de estresse', image: img6, link: '/Soluctions/teste-de-estresse' }
+];
+
+export const soluctionLinks = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/red-team', text: 'Red Team' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
 ];
 
 //About Page
@@ -47,6 +56,15 @@ export const textColorAbout = "text-white"
 export const linkHeaderAbout = "#contact";
 export const subTitleAbout = "";
 export const homeTextAbout = "Conte com profissionais dedicados para identificar brechas no seu ambiente e receba relatórios personalizados com informações relevantes para o seu negócio!";
+
+export const soluctionLinksAbout = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/red-team', text: 'Red Team' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
 
 //Teste de intrusão
 export const TitleHomeTI = "Teste De Intrusão.";
@@ -90,7 +108,7 @@ export const benefitsData = [
     }
 ];
 
-export const MethodologiesDataER = [
+export const MethodologiesDataTI = [
     {
         title: 'Metodologia',
         content: [
@@ -150,6 +168,14 @@ export const bannerItems = [
     }
 ];
 
+export const soluctionLinksTI = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/red-team', text: 'Red Team' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
+
 //Engenharia reversa
 export const TitleHomeER = "Engenharia Reversa.";
 export const bgColorERHeader = "bg-[#141414]";
@@ -178,7 +204,7 @@ export const benefitsDataER = [
     }
 ];
 
-export const MethodologiesData = [
+export const MethodologiesDataER = [
     {
         title: 'Metodologia',
         content: [
@@ -218,6 +244,14 @@ export const ethicalHackingContentER = {
     backgroundLeft: "black",
     backgroundRight: "linear-gradient(to right, #3E4A89, #6B468C)"
 };
+
+export const soluctionLinksER = [
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/red-team', text: 'Red Team' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
 
 //Red Team
 export const TitleHomeRT = "Red Team";
@@ -320,6 +354,14 @@ export const ethicalHackingContentRT = {
     backgroundLeft: "black",
     backgroundRight: "linear-gradient(to right, #3E4A89, #6B468C)"
 };
+
+export const soluctionLinksRT = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
 
 //Terms
 export const bgColorTerms = "bg-[#f8f4f4]";

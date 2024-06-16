@@ -7,7 +7,7 @@ import BannerServices from '../Components/BannerServices/BannerServices';
 import Footer from '../Components/Footer/Footer';
 import BenefictsServices from '../Components/BenefictsServices/BenefictsServices';
 import Methodologies from '../Components/Methodologies/Methodologies';
-import { MethodologiesData, TitleHomeTI, bannerItems, benefitsData, bgColorHeader, bgColorTIHeader, bgColorTIHome, ethicalHackingContent, homeTextTI, homeTitle, linkHeaderTI, textColorTI } from './Config';
+import { MethodologiesData, MethodologiesDataTI, TitleHomeTI, bannerItems, benefitsData, bgColorHeader, bgColorTIHeader, bgColorTIHome, ethicalHackingContent, homeTextTI, homeTitle, linkHeaderTI, soluctionLinksTI, textColorTI } from './Config';
 import BannerSoluctions from '../Components/BannerSoluctions/BannerSoluctions';
 
 
@@ -16,13 +16,14 @@ const TesteDi = () => {
     <>
       <Header bgColor={bgColorTIHeader}
         linkContact={linkHeaderTI}
-        textColor={textColorTI}/>
+        textColor={textColorTI}
+        soluctionLinks={soluctionLinksTI}/>
       <Home bgColor={bgColorTIHome}
         title={TitleHomeTI}
         text={homeTextTI}/>
       <BannerSoluctions bannerItems={bannerItems}/>
       <BenefictsServices benefitsData={benefitsData} />
-      <Methodologies content={MethodologiesData} />
+      <Methodologies content={MethodologiesDataTI} />
       <Contact />
       <BannerServices {...ethicalHackingContent}/>
       <Footer />
