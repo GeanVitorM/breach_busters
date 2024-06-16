@@ -32,21 +32,32 @@ const ClientCarrossel = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        arrows: false, // Desabilitar as setas de navegação
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     };
 
     return (
         <div className="bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] py-16">
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold text-white mb-8">Precisa de mais provas?</h2>
-                <Slider {...settings}>
-                    {testimonials.map((testimonial, index) => (
-                        <div key={index} className="text-center px-4">
-                            <img src={testimonial.logo} alt={`${testimonial.name} Logo`} className="mx-auto mb-4 w-20 h-20" />
-                            <p className="text-white font-bold">{testimonial.name}</p>
-                            <p className="text-white mt-2">{testimonial.quote}</p>
-                        </div>
-                    ))}
-                </Slider>
+                <div className="mx-auto max-w-xl relative">
+                    <Slider {...settings}>
+                        {testimonials.map((testimonial, index) => (
+                            <div key={index} className="text-center">
+                                <img src={testimonial.logo} alt={`${testimonial.name} Logo`} className="mx-auto mb-4 w-20 h-20 rounded-full" />
+                                <p className="text-white font-bold">{testimonial.name}</p>
+                                <p className="text-white mt-2">{testimonial.quote}</p>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );

@@ -24,7 +24,7 @@ function Main() {
       <SoluctionCards soluctionData={soluctionCards} />
       <Benefits />
       <Contact />
-      {/* <ClientCarrossel /> */}
+      <ClientCarrossel />
       <Footer />
     </div>
   );
