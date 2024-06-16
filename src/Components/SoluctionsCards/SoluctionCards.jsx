@@ -25,23 +25,17 @@ const SoluctionCards = ({ soluctionData }) => {
                         centeredSlides={true}
                         pagination={{ clickable: true }}
                         loop={true}
+                        autoplay={{ delay: 3000 }}
                     >
                         {soluctionData.map(card => (
                             <SwiperSlide key={card.id}>
-                                <div className="flex justify-center">
-                                    <a
-                                        href={card.link}
-                                        className="rounded-lg p-4 flex bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg hover:bg-opacity-20 hover:backdrop-blur-xl transition duration-300 w-64"
-                                    >
-                                        <img
-                                            src={card.image}
-                                            alt={`Imagem ${card.id}`}
-                                            className="w-16 h-16 object-cover mr-4 rounded-lg"
-                                        />
-                                        <div className="flex-1">
-                                            <p className="text-base font-semibold mb-2">{card.title}</p>
-                                        </div>
-                                    </a>
+                                <div className="flex flex-col items-center">
+                                    <p className="text-lg font-semibold mb-2">{card.title}</p>
+                                    <img
+                                        src={card.image}
+                                        alt={`Imagem ${card.id}`}
+                                        className="w-32 h-32 object-cover rounded-lg"
+                                    />
                                 </div>
                             </SwiperSlide>
                         ))}

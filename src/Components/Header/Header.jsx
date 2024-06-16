@@ -53,8 +53,14 @@ const Header = ({ bgColor, textColor, linkContact }) => {
                 </div>
             </div>
             {/* Drawer para dispositivos móveis */}
-            <div className={`fixed top-0 right-0 h-full max-w-xs w-full bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20`}>
-                <div className="flex justify-end p-4">
+            <div className={`fixed top-0 right-0 h-full max-w-xs w-full ${textColor} bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20 backdrop-blur-lg`}>
+                <div className="flex justify-between items-center px-4 py-6">
+                    <a href="/" className="flex items-center">
+                        <img src={Icone} alt="Logo" className="w-10 h-10" />
+                        <h1 className="text-lg font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
+                            Breach Busters
+                        </h1>
+                    </a>
                     <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className="focus:outline-none">
                         <HiX className="w-8 h-8 text-white" />
                     </button>
