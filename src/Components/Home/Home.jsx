@@ -1,5 +1,5 @@
 import React from 'react';
-import illustration from '../../Images/undraw_hacker_mind_-6-y85.svg';
+import illustration from '../../Images/Cyber attack-pana.svg';
 
 const Home = ({ bgColor, title, subTitle, text }) => {
   return (
@@ -19,8 +19,8 @@ const Home = ({ bgColor, title, subTitle, text }) => {
             BECOME BREACHLESS
           </a>
         </div>
-        <div className="md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
-          <img src={illustration} alt="Illustration" className="w-2/3 md:w-full px-10 ml-auto" />
+        <div className="md:w-2/3 flex items-center justify-center mt-8 md:mt-0">
+          <img src={illustration} alt="Illustration" className="w-2/3 md:w-full px-10 ml-10" />
         </div>
       </div>
     </div>
