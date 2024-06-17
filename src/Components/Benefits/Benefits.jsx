@@ -11,9 +11,9 @@ const Benefits = () => {
   const cardsRef = useRef(null);
 
   const cards = [
-    { id: 1, title: 'Por Que', subTitle: 'Saiba porque a Breach Busters é a escolha ideal', content: 'A Breach Busters domina o mercado Brasileiro e entende o contexto de segurança, aliamos paixão experiência e expertise formando uma trindade perfeita para ajudar o seu negocio a ser mais seguro.', image: Imagem1 },
-    { id: 2, title: 'Privacidade', subTitle: 'Projetos em nivel TOP SECRET.', content: 'Seus dados estão seguros conosco, temos politicas severas a respeito dos dados dos nossos clientes e em breve atestaremos essas politicas com certificações como a 27001.Confidencialidade: Os projetos são confidenciais e somente para pessoas autorizadas. Todos os dados passam pelo processo de tratamento, tendo como fim sua destruição total.', image: Imagem2 },
-    { id: 3, title: 'Profissionais', subTitle: 'Apaixonados pelo que fazem, e relevante pelo que entregam.', content: 'Somos fascinados pelo nosso trabalho, contamos com vasta experiência e certificados relevantes do mercado.Nosso time participa ativamente de comunidades, projetos open source e disseminam o conhecimento em prol de uma Internet mais segura ', image: Imagem3 }
+    { id: 1, title: 'Por Que', subTitle: 'Saiba porque a Breach Busters é a escolha ideal', content: 'A Breach Busters domina o mercado Brasileiro e entende o contexto de segurança, aliamos paixão experiência e expertise formando uma trindade perfeita para ajudar o seu negocio a ser mais seguro.' },
+    { id: 2, title: 'Privacidade', subTitle: 'Projetos em nivel TOP SECRET.', content: 'Seus dados estão seguros conosco, temos politicas severas a respeito dos dados dos nossos clientes e em breve atestaremos essas politicas com certificações como a 27001.Confidencialidade: Os projetos são confidenciais e somente para pessoas autorizadas. Todos os dados passam pelo processo de tratamento, tendo como fim sua destruição total.'},
+    { id: 3, title: 'Profissionais', subTitle: 'Apaixonados pelo que fazem, e relevante pelo que entregam.', content: 'Somos fascinados pelo nosso trabalho, contamos com vasta experiência e certificados relevantes do mercado.Nosso time participa ativamente de comunidades, projetos open source e disseminam o conhecimento em prol de uma Internet mais segura ', }
   ];
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Benefits = () => {
           setTypingIndex(prevIndex => prevIndex + 1);
           return newText;
         });
-      }, 30);
+      }, 20);
 
       return () => clearInterval(typingInterval);
     }
@@ -42,7 +42,7 @@ const Benefits = () => {
   const isMobile = window.innerWidth <= 768;
 
   return (
-    <div className={`flex justify-center items-start py-4 bg-[#202444] text-white w-full mt-4 ${isMobile ? 'flex-col' : 'flex-row'}`}>
+    <div className={`flex justify-center items-start py-4 bg-[#202444] text-white w-full mt-4 ${isMobile ? 'flex-col' : 'flex-row'}`} style={{ fontFamily: 'Montserrat, sans-serif' }}>
       {isMobile ? (
         <>
           <div className="w-full space-y-4">
@@ -104,7 +104,6 @@ const Benefits = () => {
               <>
                 <h2 className="text-2xl font-bold">{selectedCard.title}</h2>
                 <p className="mt-4">{textToShow}</p>
-                <img src={selectedCard.image} className="absolute bottom-4 right-4 w-20 h-20" alt={selectedCard.title} />
               </>
             </div>
           )}

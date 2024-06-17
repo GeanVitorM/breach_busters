@@ -3,7 +3,7 @@ import errorImg from '../../Images/erro.png';
 import successImg from '../../Images/aceitaram.png';
 
 const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress }) => (
-  <div id="contact" className="flex justify-center items-center py-8 bg-black">
+  <div id="contact" className="flex justify-center items-center py-8 bg-black" style={{ fontFamily: 'Poppins , sans-serif' }}>
     <div className="text-white max-w-md w-full px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Vamos realizar um pentesting.</h1>
       <div className="flex justify-center items-center mb-6">

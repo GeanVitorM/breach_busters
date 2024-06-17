@@ -29,7 +29,7 @@ const Soluctions = () => {
 
     return (
         <div className="flex flex-col items-center bg-[#202444] pt-20 text-white">
-            <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4">
+            <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 Soluções personalizáveis Para <span className="text-[#d11c9b]">Todas</span> As Empresas
             </h1>
             <div className="w-full max-w-screen-xl px-4">
@@ -56,8 +56,8 @@ const Soluctions = () => {
                                             className="h-28 w-28 object-cover mx-auto mb-2"
                                         />
                                     </div>
-                                    <h2 className="text-lg font-semibold mb-2">{card.title}</h2>
-                                    <p>{card.text}</p>
+                                    <h2 className="text-lg font-semibold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>{card.title}</h2>
+                                    <p style={{ fontFamily: 'Montserrat, sans-serif' }} >{card.text}</p>
                                 </div>
                             </div>
                         </SwiperSlide>

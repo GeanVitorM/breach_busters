@@ -7,7 +7,7 @@ const SoluctionCards = ({ soluctionData }) => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
-        <div id="solucoes" className="bg-[#202444] text-white">
+        <div id="solucoes" className="bg-[#202444] text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <div className="container mx-auto py-4">
                 <div className="text-center mb-8 px-4">
                     <h1 className="text-3xl font-bold">Soluções</h1>

@@ -8,7 +8,7 @@ const Header = ({ bgColor, textColor, linkContact, soluctionLinks = [] }) => {
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
+            <div className={`flex justify-between items-center mt-0 mb-0 m-12 px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
                         <img src={Icone} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
