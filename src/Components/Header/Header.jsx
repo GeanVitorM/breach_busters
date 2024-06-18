@@ -7,10 +7,10 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center mt-0 mb-0 m-12 px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
+            <div className={`flex justify-between items-center md:mt-0 md:mb-0 md:m-16 px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
-                        <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12 img-cover" />
+                        <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
                     </a>
                     <div className={`hidden md:block mx-4 border-l-2 h-8 md:h-12 ${textColor}`}></div>
                     <a href="/">
@@ -52,7 +52,6 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
                     </button>
                 </div>
             </div>
-            {/* Drawer para dispositivos móveis */}
             <div className={`fixed top-0 right-0 h-full max-w-xs w-full ${textColor} bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20 backdrop-blur-lg`}>
                 <div className="flex justify-between items-center px-4 py-6">
                     <a href="/" className="flex items-center">
