@@ -1,5 +1,5 @@
 import React from 'react';
-import illustration from '../../Images/Cyber attack-pana.svg';
+import illustration from '../../Images/cyber-attack-pana.webp';
 
 const Home = ({ bgColor, title, subTitle, text }) => {
   return (
