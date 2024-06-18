@@ -6,21 +6,23 @@ import Methodologies from '../Components/Methodologies/Methodologies';
 import Contact from '../Components/Contact/Contact';
 import BannerServices from '../Components/BannerServices/BannerServices';
 import Footer from '../Components/Footer/Footer';
-import { TitleHomeRT, bannerItemsRT, benefitsDataRT, bgColorERHome, bgColorRTHeader, homeTextRT, linkHeaderRT , MethodologiesDataRT, ethicalHackingContentRT, textColorRT, soluctionLinksRT} from './Config';
+import logo from './../Images/BREACH_BUSTER_HACKING_CLUB__1_-removebg-preview.webp'
+import { TitleHomeRT, bannerItemsRT, benefitsDataRT, bgColorERHome, bgColorRTHeader, homeTextRT, linkHeaderRT, MethodologiesDataRT, ethicalHackingContentRT, textColorRT, soluctionLinksRT, logoHeaderRT } from './Config';
 
 const RedTeam = () => {
     return (
         <>
-            <Header bgColor={bgColorRTHeader}
-                linkContact={linkHeaderRT} 
+            <Header logo={logo}
+                bgColor={bgColorRTHeader}
+                linkContact={linkHeaderRT}
                 textColor={textColorRT}
-                soluctionLinks={soluctionLinksRT}/>
+                soluctionLinks={soluctionLinksRT} />
             <Home bgColor={bgColorERHome}
-                title={TitleHomeRT} 
-                text={homeTextRT}/>
+                title={TitleHomeRT}
+                text={homeTextRT} />
             <BannerSoluctions bannerItems={bannerItemsRT} />
-            <BenefictsServices benefitsData={benefitsDataRT}/>
-            <Methodologies content={MethodologiesDataRT}/>
+            <BenefictsServices benefitsData={benefitsDataRT} />
+            <Methodologies content={MethodologiesDataRT} />
             <Contact />
             <BannerServices {...ethicalHackingContentRT} />
             <Footer />

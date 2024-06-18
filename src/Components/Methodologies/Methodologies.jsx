@@ -20,7 +20,7 @@ const Methodologies = ({ content }) => {
                             className={`flex flex-col md:flex-row ${isReverse ? 'md:flex-row-reverse' : ''} items-center`}
                         >
                             <div className="hidden md:flex w-full md:w-1/3 justify-center md:justify-start mb-4 md:mb-0 md:mr-4">
-                                <img src={section.image} alt={section.title} className="h-auto max-w-xs rounded-lg" />
+                                
                             </div>
                             <div className="w-full md:w-2/3 bg-[#1A1A5C] p-6 rounded-lg shadow-lg">
                                 <h3 

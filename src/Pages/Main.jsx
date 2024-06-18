@@ -7,13 +7,15 @@ import Home from '../Components/Home/Home';
 import Soluctions from '../Components/Soluctions/Soluctions';
 import SoluctionCards from '../Components/SoluctionsCards/SoluctionCards';
 import Footer from '../Components/Footer/Footer';
-import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, soluctionCards, soluctionLinks, subTitle, textColorHeader } from './Config';
+import logo from './../Images/Icone_Fundo_Transparente.webp';
+import { bgColorHeader, bgColorHome, homeText, homeTitle, linkHeader, logoHeaderHome, soluctionCards, soluctionLinks, subTitle, textColorHeader } from './Config';
 import ClientCarrossel from '../Components/ClientCarrosel/ClienteCarrosel';
 
 function Main() {
   return (
     <div className="bg-[#202444]">
-      <Header bgColor={bgColorHeader}
+      <Header logo={logo}
+        bgColor={bgColorHeader}
         linkContact={linkHeader}
         soluctionLinks={soluctionLinks}
         textColor={textColorHeader} />

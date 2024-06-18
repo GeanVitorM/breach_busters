@@ -13,7 +13,6 @@ const BenefictsServices = ({ benefitsData }) => {
                 <h2 className="text-4xl font-bold text-center mb-6">Benefícios</h2>
                 <p className="text-center mb-12">Ao simular ataques controlados, é possível identificar e corrigir vulnerabilidades antes que sejam exploradas por hackers maliciosos, mitigando riscos e protegendo seus dados e os de seus parceiros. Além disso, ajuda a cumprir requisitos regulatórios, proteger sua reputação e aumentar o conhecimento da equipe sobre práticas seguras de computação.</p>
                 
-                {/* Carrossel para dispositivos móveis */}
                 <div className="block md:hidden mb-20">
                     <Swiper
                         spaceBetween={30}
@@ -34,7 +33,6 @@ const BenefictsServices = ({ benefitsData }) => {
                     </Swiper>
                 </div>
                 
-                {/* Grid para dispositivos maiores */}
                 <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {benefitsData.map((benefit, index) => (
                         <div key={index} className="bg-white text-black p-6 rounded-lg shadow-lg transition transform hover:scale-105">

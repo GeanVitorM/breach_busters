@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import icone1 from '../../Images/TelescopioPixel.png';
-import icone2 from '../../Images/cadeado (1).png';
-import icone3 from '../../Images/jogos.png';
+import icone1 from '../../Images/telescope.webp';
+import icone2 from '../../Images/lock.webp';
+import icone3 from '../../Images/choices (1).webp';
 
 const Soluctions = () => {
     const cards = [

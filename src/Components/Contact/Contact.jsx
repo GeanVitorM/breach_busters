@@ -80,7 +80,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
       <div className="flex justify-center items-center mb-8">
         <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden">
           <div
-            className="h-full bg-pink-500 flex items-center justify-end pr-2 transition-width duration-300"
+            className="h-full bg-pink-500 flex items-center justify-end pr-2 transition-width duration-300 animation: bounce 1s infinite;"
             style={{ width: `${progress}%` }}
           >
             <span className="text-white text-sm">Quase lá!</span>

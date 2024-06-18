@@ -2,12 +2,14 @@ import BannerInfo from "../Components/BannerInfo/BannerInfo";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import TextInfo from "../Components/TextInfo/TextInfo";
-import { bgColorPolicy, textColorPolicy, textPolicy, titleBannerPolicy } from "./Config";
+import { bgColorPolicy, logoHeaderTerms, textColorPolicy, textPolicy, titleBannerPolicy } from "./Config";
+import logo from './../Images/Icone_Fundo_Transparente.webp';
 
 const Policy = () => {
     return (
         <>
-            <Header bgColor={bgColorPolicy}
+            <Header logo={logo}
+            bgColor={bgColorPolicy}
                 textColor={textColorPolicy}
                 linkContact={textPolicy} />
             <BannerInfo title={titleBannerPolicy} />

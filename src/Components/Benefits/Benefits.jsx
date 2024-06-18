@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Relogio from "../../Images/relogio.png";
-import Imagem1 from "../../Images/conquista-de-conhecimento.png";
-import Imagem2 from "../../Images/agil.png";
-import Imagem3 from "../../Images/estrutura.png";
+import Relogio from "../../Images/relogio.webp";
+
 
 const Benefits = () => {
   const [selectedCard, setSelectedCard] = useState(null);

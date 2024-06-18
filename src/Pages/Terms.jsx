@@ -3,12 +3,12 @@ import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import TextInfo from "../Components/TextInfo/TextInfo";
 import { DataTerms, bgColorTerms, linkContactTerms, textColorTerms, titleBannerTerms } from "./Config";
-
+import logo from './../Images/Icone_Fundo_Transparente.webp';
 
 const Terms = () => {
     return (
         <>
-            <Header bgColor={bgColorTerms}
+            <Header bgColor={logo}
                 linkContact={linkContactTerms}
                 textColor={textColorTerms} />
             <BannerInfo title={titleBannerTerms}

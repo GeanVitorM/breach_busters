@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
-import Icone from '../../Images/Icone_Fundo_Transparente.png';
 
-const Header = ({ bgColor, textColor, linkContact, soluctionLinks = [] }) => {
+const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [solucoesOpen, setSolucoesOpen] = useState(false);
 
@@ -11,7 +10,7 @@ const Header = ({ bgColor, textColor, linkContact, soluctionLinks = [] }) => {
             <div className={`flex justify-between items-center mt-0 mb-0 m-12 px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
-                        <img src={Icone} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
+                        <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12 img-cover" />
                     </a>
                     <div className={`hidden md:block mx-4 border-l-2 h-8 md:h-12 ${textColor}`}></div>
                     <a href="/">
@@ -57,7 +56,7 @@ const Header = ({ bgColor, textColor, linkContact, soluctionLinks = [] }) => {
             <div className={`fixed top-0 right-0 h-full max-w-xs w-full ${textColor} bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20 backdrop-blur-lg`}>
                 <div className="flex justify-between items-center px-4 py-6">
                     <a href="/" className="flex items-center">
-                        <img src={Icone} alt="Logo" className="w-10 h-10" />
+                        <img src={logo} alt="Logo" className="w-10 h-10" />
                         <h1 className="text-lg font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
                             Breach Busters
                         </h1>

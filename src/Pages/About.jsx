@@ -5,12 +5,14 @@ import ValuesAndZens from "../Components/ValuesAndZen/ValuesAndZen";
 import BlackSection from "../Components/BlackSection/BlackSection";
 import Identified from "../Components/Identified/Identified";
 import Footer from "../Components/Footer/Footer";
-import { AboutBgColorHome, AboutbgColorHeader, aboutTitle, linkHeader, textColorAbout } from "./Config";
+import logo from './../Images/Icone_Fundo_Transparente.webp'
+import { AboutBgColorHome, AboutbgColorHeader, aboutTitle, linkHeader, logoHeaderAbout, textColorAbout } from "./Config";
 
 const About = () => {
     return (
         <>
-            <Header bgColor={AboutbgColorHeader}
+            <Header logo={logo} 
+            bgColor={AboutbgColorHeader}
                 linkContact={linkHeader} 
                 textColor={textColorAbout}/>
             <Home bgColor={AboutBgColorHome}

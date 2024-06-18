@@ -1,28 +1,27 @@
 //Imports 
-import Find from './../Images/pesquisa.png';
-import Proj from './../Images/projeto.png';
-import Denun from './../Images/denunciante.png';
-import IconRisk from './../Images/risco.png';
-import IconSecurity from './../Images/seguranca.png';
-import IconCompliance from './../Images/lista-de-controle.png';
-import IconCredibility from './../Images/insignia.png';
-import IconDifferential from './../Images/setas-flechas.png';
-import IconTrust from './../Images/confianca.png';
-import IconBin from "../Images/codigo-binario.png";
-import icone1 from './../Images/certificado.png';
-import icone2 from './../Images/navegador-da-web.png';
-import icone3 from './../Images/painel-de-controle.png';
-import ampulheta from './../Images/ampulheta.png';
-import foco from './../Images/foco (1).png';
-import escudo from './../Images/escudo.png';
-import img1 from './../Images/ataque-cibernetico.png';
-import img2 from './../Images/abra-o-livro (1).png';
-import img3 from './../Images/codigo-binario.png';
-import img4 from './../Images/espada (1).png';
-import img5 from './../Images/aviao-de-papel (1).png';
-import img6 from './../Images/apoio-suporte.png';
+import IconRisk from './../Images/risks.webp';
+import IconSecurity from './../Images/security.webp';
+import IconCompliance from './../Images/reliability.webp';
+import IconCredibility from './../Images/badge.webp';
+import IconDifferential from './../Images/horse.webp';
+import IconTrust from './../Images/handshake.webp';
+import IconBin from "../Images/risks.webp";
+import recession from './../Images/recession.webp';
+import up_arrow from './../Images/up-arrow.webp';
+import logout from './../Images/logout (1).webp';
+import ampulheta from './../Images/sandglass (2).webp';
+import foco from './../Images/target (1).webp';
+import escudo from './../Images/shield-1.webp';
+import img1 from './../Images/hacker.webp';
+import img2 from './../Images/book.webp';
+import img3 from './../Images/data-analytics.webp';
+import img4 from './../Images/sword.webp';
+import img5 from './../Images/send-message (1).webp';
+import img6 from './../Images/access-denied.webp';
+
 
 //Main page
+
 export const homeTitle = "Start Bust into the";
 export const bgColorHome = "bg-[#34347c]";
 export const bgColorHeader = "bg-[#34347c]";
@@ -49,6 +48,7 @@ export const soluctionLinks = [
 ];
 
 //About Page
+
 export const aboutTitle = "Buscando um mundo digitalmente seguro...";
 export const AboutbgColorHeader = "bg-[#34347c]";
 export const AboutBgColorHome = "bg-[#34347c]";
@@ -67,9 +67,10 @@ export const soluctionLinksAbout = [
 ];
 
 //Teste de intrusão
+
 export const TitleHomeTI = "Teste De Intrusão.";
-export const bgColorTIHeader = "bg-[#000000]";
-export const bgColorTIHome = "bg-[#000000]";
+export const bgColorTIHeader = "bg-[#131112]";
+export const bgColorTIHome = "bg-[#131112]";
 export const textColorTI = "text-white"
 export const linkHeaderTI = "/";
 export const subTitleTI = "";
@@ -116,8 +117,7 @@ export const MethodologiesDataTI = [
             '• OWASP – Open Web Application Security Project – Organizações dedicadas à segurança de aplicações web, oferecendo diretrizes e ferramentas para proteger contra ameaças.',
             '• PTES – Penetration Testing Execution Standard – Um padrão para conduzir testes de penetração de forma consistente e abrangente.',
             '• NIST – National Institute of Standards and Technology – É um framework desenvolvido pelo Breach Busters para testes de penetração e espionagem.'
-        ],
-        image: Find
+        ]
     },
     {
         title: 'Projeto',
@@ -126,8 +126,7 @@ export const MethodologiesDataTI = [
             '• ESCOPO – Você irá ver quais domínios estão em avaliação de testes, reagendando horas, dias e semanas, explicando o que há em algum cenário.',
             '• AVALIAÇÃO – Avaliação de que maneira poderiam ser implementados contra uma avaliação, usando nossas próprias técnicas de implantações realística.',
             '• RESULTADO – É agendada uma data/horário para gerar, BOA e INF, demandando serem traduzidas de forma clara para torná-las com dados de decisões e debates para o time técnico.'
-        ],
-        image: Proj
+        ]
     },
     {
         title: 'Report',
@@ -136,8 +135,7 @@ export const MethodologiesDataTI = [
             '• Relatórios Técnicos e Gerenciais – Contendo todas as etapas dos testes e suas sugestões.',
             '• Relatórios para Tomadores de Decisão – Exclusivos para os tomadores de decisão que necessitam de informação legível e eficiente.',
             '• Relatórios em PowerPoint – Apresentação de slides para que o nosso team possa explicar o que precisa ser feito, já com etapas e atividades dentro.'
-        ],
-        image: Denun
+        ]
     }
 ];
 
@@ -152,17 +150,17 @@ export const ethicalHackingContent = {
 
 export const bannerItems = [
     {
-        icon: icone1,
+        icon: recession,
         title: 'Visibilidade',
         description: 'Garanta total visibilidade sobre seus ativos digitais e suas vulnerabilidades.'
     },
     {
-        icon: icone2,
+        icon: up_arrow,
         title: 'Segurança',
         description: 'Proteja seus dados e aplicativos com as soluções de segurança mais avançadas.'
     },
     {
-        icon: icone3,
+        icon: logout,
         title: 'Controle',
         description: 'Tenha controle total sobre sua infraestrutura de segurança com nossas ferramentas de gestão.'
     }
@@ -178,8 +176,8 @@ export const soluctionLinksTI = [
 
 //Engenharia reversa
 export const TitleHomeER = "Engenharia Reversa.";
-export const bgColorERHeader = "bg-[#141414]";
-export const bgColorERHome = "bg-[#141414]";
+export const bgColorERHeader = "bg-[#131112]";
+export const bgColorERHome = "bg-[#131112]";
 export const textColorER = "text-white"
 export const linkHeaderER = "/contact";
 export const subTitleER = "";
@@ -211,8 +209,7 @@ export const MethodologiesDataER = [
             'MITRE ATT&CK - Uma base de conhecimento detalhada que mapeia táticas, técnicas e procedimentos usados por adversários em ciberataques. Ele ajuda as equipes Red Team a replicar ataques reais com precisão, oferecendo uma visão abrangente das potenciais ameaças.',
             'CBEST - Um framework desenvolvido pelo Bank of England que oferece uma abordagem padronizada para realizar testes Red Team em instituições financeiras. Ele foca em ameaças reais e ajuda a identificar fraquezas significativas na infraestrutura de segurança.',
             'OSSTMM - Open Source Security Testing Methodology Manual, um framework desenvolvido pelo Institute for Security and Open Methodologies (ISECOM).'
-        ],
-        image: Find
+        ]
     },
     {
         title: 'Projeto',
@@ -221,8 +218,7 @@ export const MethodologiesDataER = [
             'ESCOPO - Você e sua equipe definem quais são os artefatos de testes, regulando horas, dias, servidores, aplicações e o que mais julgarem necessário.',
             'OPERAÇÃO - Nosso time de especialistas realiza o pentesting mantendo contato sobre o andamento da operação e demais informações necessárias.',
             'RESULTADO - É agendada uma data final para entrega do RAT, ROC e HF, demonstrando com exatidão de forma clara para tomadores de decisões e detalhada para o time técnico.'
-        ],
-        image: Proj
+        ]
     },
     {
         title: 'Report',
@@ -231,8 +227,7 @@ export const MethodologiesDataER = [
             'RAT - Relatório de Análise Técnica - Confeccionado para o time que faz o seu negócio acontecer, mostrando detalhes bit a bit.',
             'ROC - Resumo de Operações Cibernéticas - Exclusivo para os tomadores de decisão que precisam da informação rápida e precisa.',
             'HF - Highlight Founds - Uma apresentação com seu time e o nosso para explicar o que foi encontrado e tirar eventuais dúvidas.'
-        ],
-        image: Denun
+        ]
     }
 ];
 
@@ -255,8 +250,8 @@ export const soluctionLinksER = [
 
 //Red Team
 export const TitleHomeRT = "Red Team";
-export const bgColorRTHeader = "bg-[#141414]";
-export const bgColorRTHome = "bg-[#141414]";
+export const bgColorRTHeader = "bg-[#131112]";
+export const bgColorRTHome = "bg-[#131112]";
 export const linkHeaderRT = "/contact";
 export const textColorRT = "text-white"
 export const subTitleRT = "";
@@ -321,8 +316,7 @@ export const MethodologiesDataRT = [
             '• OWASP – Open Web Application Security Project – Organizações dedicadas à segurança de aplicações web, oferecendo diretrizes e ferramentas para proteger contra ameaças.',
             '• PTES – Penetration Testing Execution Standard – Um padrão para conduzir testes de penetração de forma consistente e abrangente.',
             '• NIST – National Institute of Standards and Technology – É um framework desenvolvido pelo Breach Busters para testes de penetração e espionagem.'
-        ],
-        image: Find
+        ]
     },
     {
         title: 'Projeto',
@@ -331,8 +325,7 @@ export const MethodologiesDataRT = [
             '• ESCOPO – Você irá ver quais domínios estão em avaliação de testes, reagendando horas, dias e semanas, explicando o que há em algum cenário.',
             '• AVALIAÇÃO – Avaliação de que maneira poderiam ser implementados contra uma avaliação, usando nossas próprias técnicas de implantações realística.',
             '• RESULTADO – É agendada uma data/horário para gerar, BOA e INF, demandando serem traduzidas de forma clara para torná-las com dados de decisões e debates para o time técnico.'
-        ],
-        image: Proj
+        ]
     },
     {
         title: 'Report',
@@ -341,8 +334,7 @@ export const MethodologiesDataRT = [
             '• Relatórios Técnicos e Gerenciais – Contendo todas as etapas dos testes e suas sugestões.',
             '• Relatórios para Tomadores de Decisão – Exclusivos para os tomadores de decisão que necessitam de informação legível e eficiente.',
             '• Relatórios em PowerPoint – Apresentação de slides para que o nosso team possa explicar o que precisa ser feito, já com etapas e atividades dentro.'
-        ],
-        image: Denun
+        ]
     }
 ];
 

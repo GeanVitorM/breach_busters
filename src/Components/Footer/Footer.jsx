@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import skeletonLogo from '../../Images/Icone_Fundo_Transparente.png';
+import skeletonLogo from '../../Images/BREACH_BUSTER_HACKING_CLUB__1_-removebg-preview.webp';
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col items-center md:items-start">
             <div className="flex flex-row items-center space-x-4">
-              <img src={skeletonLogo} alt="Logo" className="w-16 h-20 mb-4 md:mb-0" />
+              <img src={skeletonLogo} alt="Logo" className="w-16 h-20 mb-4 md:mb-0 img-cover" />
               <h1 className="font-bold" style={{ fontFamily: 'Tomorrow, sans-serif' }}>Breach Busters</h1>
             </div>
             <div className="mt-4 text-center md:text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -47,14 +47,14 @@ const Footer = () => {
             <div className="mx-4">
               <h4 className="font-bold text-[#d11c9b]">Hire Us</h4>
               <ul>
-                <li>Work with us</li>
+                <li><a href="https://www.linkedin.com/company/breachbusters/">Work with us</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start mt-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           <div className="flex space-x-4 mb-4 justify-center md:justify-start w-full">
-            <a href="#"><FaLinkedin className="text-xl cursor-pointer" /></a>
+            <a href="https://www.linkedin.com/company/breachbusters/"><FaLinkedin className="text-xl cursor-pointer" /></a>
             <a href="#"><FaYoutube className="text-xl cursor-pointer" /></a>
             <a href="#"><FaInstagram className="text-xl cursor-pointer" /></a>
           </div>
