@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import errorImg from '../../Images/erro.png';
 import successImg from '../../Images/aceitaram.png';
+import './contact.css';
 
 const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress }) => (
   <div id="contact" className="flex justify-center items-center py-8 bg-black" style={{ fontFamily: 'Poppins , sans-serif' }}>
     <div className="text-white max-w-md w-full px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Vamos realizar um pentesting.</h1>
       <div className="flex justify-center items-center mb-6">
-        <div className="w-3/4 h-3 bg-gray-700 rounded-full overflow-hidden">
+        <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
-            className="h-full bg-pink-500 flex items-center justify-end pr-2 transition-width duration-300"
+            className="progressbar-complete"
             style={{ width: `${progress}%` }}
           >
-            <span className="text-white text-xs md:text-sm">Quase lá!</span>
+            <div className="progressbar-liquid"></div>
           </div>
+          <span className="progress text-white text-xs md:text-sm">{progress}%</span>
         </div>
         <span className="ml-2 text-white">🔒</span>
       </div>
@@ -78,13 +80,14 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
     <div className="text-white max-w-5xl w-full px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold mb-8 text-center">Vamos realizar um pentesting.</h1>
       <div className="flex justify-center items-center mb-8">
-        <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden">
+        <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
-            className="h-full bg-pink-500 flex items-center justify-end pr-2 transition-width duration-300 animation: bounce 1s infinite;"
+            className="progressbar-complete"
             style={{ width: `${progress}%` }}
           >
-            <span className="text-white text-sm">Quase lá!</span>
+            <div className="progressbar-liquid"></div>
           </div>
+          <span className="progress text-white text-sm">{progress}%</span>
         </div>
         <span className="ml-2 text-white">🔒</span>
       </div>
@@ -137,6 +140,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
     </div>
   </div>
 );
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({

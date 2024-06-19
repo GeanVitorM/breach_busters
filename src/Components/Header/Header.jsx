@@ -7,7 +7,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center md:mt-0 md:mb-0 md:m-16 px-4 md:px-16 py-4 md:py-6 ${textColor}`}>
+            <div className={`flex justify-between items-center px-4 py-4 md:mx-8 lg:mx-16 xl:mx-24 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
                         <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
@@ -19,32 +19,22 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
                         </h1>
                     </a>
                 </div>
-                <nav className="hidden md:block">
-                    <ul className="flex space-x-4 md:space-x-10 font-bold" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
-                        <li className="group">
-                            <a href="/About" className="hover:text-gray-200 relative">
-                                Sobre
-                                <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
-                            </a>
-                        </li>
-                        <li className="group">
-                            <a href="#blog" className="hover:text-gray-200 relative">
-                                Blog
-                                <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
-                            </a>
-                        </li>
-                        <li className="group">
-                            <a href="#solucoes" className="hover:text-gray-200 relative">
-                                Soluções
-                                <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
-                            </a>
-                        </li>
-                        <li className="group" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
-                            <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 md:px-8 rounded-full relative">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
+                <nav className="hidden md:flex space-x-4 md:space-x-6 lg:space-x-10 font-bold" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
+                    <a href="/About" className="hover:text-gray-200 relative">
+                        Sobre
+                        <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
+                    </a>
+                    <a href="#blog" className="hover:text-gray-200 relative">
+                        Blog
+                        <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
+                    </a>
+                    <a href="#solucoes" className="hover:text-gray-200 relative">
+                        Soluções
+                        <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
+                    </a>
+                    <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 md:px-6 lg:px-8 rounded-full relative">
+                        Contact Us
+                    </a>
                 </nav>
                 <div className="block md:hidden">
                     <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" className="focus:outline-none">
@@ -112,7 +102,6 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
                     </ul>
                 </nav>
             </div>
-            {/* Fundo transparente para clicar e fechar o menu */}
             {menuOpen && <div className="fixed inset-0 bg-black opacity-50 z-10 md:hidden" onClick={() => setMenuOpen(false)}></div>}
         </header>
     );
