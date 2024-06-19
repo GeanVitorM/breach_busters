@@ -87,7 +87,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
           >
             <div className="progressbar-liquid"></div>
           </div>
-          <span className="progress text-white text-sm">{progress}%</span>
+          <span className="progress text-white text-sm">Quase lá!</span>
         </div>
         <span className="ml-2 text-white">🔒</span>
       </div>
