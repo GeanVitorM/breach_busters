@@ -1,0 +1,30 @@
+.benefits-container {
+    font-family: 'Montserrat, sans-serif';
+    min-height: 60vh;
+  }
+  
+  .card {
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .detail-section {
+    height: auto;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .detail-section {
+      min-height: 30vh;
+    }
+  
+    .card {
+      min-height: 15vh;
+    }
+  }
+  

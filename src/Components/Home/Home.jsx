@@ -4,7 +4,7 @@ import illustration from '../../Images/cyber-attack-pana.webp';
 const Home = ({ bgColor, title, subTitle, text }) => {
   return (
     <div className={`flex mb-0 mt-0 m-0 items-center justify-center min-h-screen ${bgColor} text-white font-sans`}>
-      <div className="md:flex flex-col md:flex-row md:items-center md:justify-between md:max-w-6xl">
+      <div className="md:flex flex-col md:flex-row md:items-center md:justify-between md:m-10 md:ml-12">
         <div className="md:w-1/2 text-center md:text-left md:ml-8">
           <h1 className="md:text-7xl text-6xl font-bold mt-12 md:mt-12" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
             {title}
@@ -19,7 +19,7 @@ const Home = ({ bgColor, title, subTitle, text }) => {
             BECOME BREACHLESS
           </a>
         </div>
-        <div className="md:w-2/3 flex items-center justify-center md:mt-1 md:mt-0">
+        <div className="md:w-2/3 flex items-center justify-center md:mt-1">
           <img src={illustration} alt="Illustration" className="w-2/3 md:w-5/6 px-6 ml-6" />
         </div>
       </div>
