@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Relogio from "../../Images/relogio.webp";
 
 const Benefits = () => {
@@ -36,31 +36,31 @@ const Benefits = () => {
   };
 
   return (
-    <div className="md:flex md:flex-row md:justify-center md:items-start py-4 bg-[#202444] text-white mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      <div className="md:w-1/3 space-y-3 md:m-4">
+    <div className="m-8 md:flex md:flex-row md:justify-center md:items-start py-4 bg-[#202444] text-white mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <div className="md:w-1/3 space-y-2 md:space-y-4 md:m-4">
         {cards.map(card => (
           <div
             key={card.id}
-            className="p-4 h-32 bg-[#303072] rounded-lg cursor-pointer border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg"
+            className="p-2 md:p-4 h-24 md:h-32 bg-[#303072] rounded-lg cursor-pointer border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg"
             style={{ borderColor: '#d11c9b' }}
             onClick={() => handleCardClick(card)}
           >
             <div>
-              <h2 className="text-2xl font-bold text-[#d11c9b]">{card.title}</h2>
-              <p className="text-sm">{card.subTitle}</p>
+              <h2 className="text-lg md:text-2xl font-bold text-[#d11c9b]">{card.title}</h2>
+              <p className="text-xs md:text-sm">{card.subTitle}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="md:flex md:mt-0 p-4 bg-[#303072] md:rounded-lg relative lg:w-1/2 md:mt-4 w-full flex flex-col">
+      <div className="md:flex md:mt-0 p-4 bg-[#303072] rounded-lg relative mt-4 lg:w-1/2 md:mt-4 w-full flex flex-col">
         {selectedCard ? (
-          <div className="h-96">
-            <h2 className="text-2xl font-bold text-[#d11c9b]">{selectedCard.title}</h2>
-            <p className="mt-4 text-white">{textToShow}</p>
+          <div className="h-48 md:h-96">
+            <h2 className="text-lg md:text-2xl font-bold text-[#d11c9b]">{selectedCard.title}</h2>
+            <p className="mt-2 md:mt-4 text-white">{textToShow}</p>
           </div>
         ) : (
-          <div className="flex items-center justify-center w-full h-96">
+          <div className="flex items-center justify-center w-full h-48 md:h-96">
             <img src={Relogio} alt="Relógio" className="w-20 h-20" />
           </div>
         )}
