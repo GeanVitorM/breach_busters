@@ -3,8 +3,8 @@ import illustration from '../../Images/cyber-attack-pana.webp';
 
 const Home = ({ bgColor, title, subTitle, text }) => {
   return (
-    <div className={`flex mb-0 mt-0 m-0 items-center justify-center min-h-screen ${bgColor} text-white font-sans`}>
-      <div className="md:flex flex-col md:flex-row md:items-center md:justify-between md:mx-12">
+    <div className={`flex mb-0 mt-10 m-0 items-center justify-center min-h-screen ${bgColor} text-white font-sans`}>
+      <div className="md:flex flex-col md:flex-row md:items-center md:justify-between md:mx-12 m-4">
         <div className="md:w-1/2 text-center md:text-left md:ml-16 md:mr-8"> {/* Aumentada a margem esquerda */}
           <h1 className="md:text-7xl text-6xl font-bold mt-12 md:mt-12" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
             {title}
