@@ -55,12 +55,12 @@ const Benefits = () => {
 
       <div className="md:flex md:mt-0 p-4 bg-[#303072] rounded-lg relative mt-4 lg:w-1/2 md:mt-4 w-full flex flex-col">
         {selectedCard ? (
-          <div className="h-48 md:h-96">
+          <div className="h-72 md:h-96">
             <h2 className="text-lg md:text-2xl font-bold text-[#d11c9b]">{selectedCard.title}</h2>
             <p className="mt-2 md:mt-4 text-white">{textToShow}</p>
           </div>
         ) : (
-          <div className="flex items-center justify-center w-full h-48 md:h-96">
+          <div className="flex items-center justify-center w-full h-72 md:h-96">
             <img src={Relogio} alt="Relógio" className="w-20 h-20" />
           </div>
         )}
