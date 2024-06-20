@@ -6,7 +6,7 @@ import './contact.css';
 const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress }) => (
   <div id="contact" className="flex justify-center items-center py-8 bg-black" style={{ fontFamily: 'Poppins , sans-serif' }}>
     <div className="text-white max-w-md w-full px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Vamos realizar um pentesting.</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Entre em contato com nossos especialistas!</h1>
       <div className="flex justify-center items-center mb-6">
         <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
@@ -80,7 +80,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
 const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress }) => (
   <div id="contact" className="flex justify-center items-center py-20 bg-black w-full">
     <div className="text-white max-w-5xl w-full px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Vamos realizar um pentesting.</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: ' Montserrat , sans-serif' }}>Entre em contato com nossos especialistas!</h1>
       <div className="flex justify-center items-center mb-8">
         <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
@@ -89,13 +89,13 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
           >
             <div className="progressbar-liquid"></div>
           </div>
-          <span className="progress text-white text-sm">Quase lá!</span>
+          <span className="progress text-white text-sm" style={{ fontFamily: ' poppins, sans-serif' }}>Quase lá!</span>
         </div>
         <span className="ml-2 text-white">🔒</span>
       </div>
       <div className="bg-black p-8 rounded-lg shadow-lg flex justify-between items-center">
         <div className="text-left">
-          <p className="text-lg font-medium mb-4 w-4/5">
+          <p className="text-lg font-medium mb-4 w-4/5" style={{ fontFamily: ' Anonymous Pro , sans-serif' }}>
             Não precisamos convencer voce e seu time que a segurança é primordial,
             mas precisamos que voce escolha o time certo para o trabalho, insira seu
             e-mail para conversarmos sobre o escopo do nosso novo desafio!
@@ -103,7 +103,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
         </div>
         <div className="w-full">
           <form className="relative" onSubmit={handleSubmit}>
-            <label className="block text-lg font-medium mb-2 mt-4" htmlFor="email">
+            <label className="block text-lg font-medium mb-2 mt-4" htmlFor="email" style={{ fontFamily: ' Anonymous Pro , sans-serif' }}>
               Qual é o seu e-mail empresarial?
             </label>
             <input
@@ -116,7 +116,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
               onChange={handleChange}
               required
             />
-            <p className="text-xs text-white mt-2">
+            <p className="text-xs text-white mt-2" style={{ fontFamily: ' Anonymous Pro , sans-serif' }}>
               Seu e-mail seguirá os detalhes das nossas políticas de privacidade.
             </p>
             <div className="text-center text-red-500 mt-4">

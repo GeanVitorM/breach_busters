@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlackSection = () => {
     return (
-        <div className="bg-black text-white py-12 px-6 text-center">
+        <div className="bg-black text-white py-12 px-6 text-center" style={{ fontFamily: ' Poppins, sans-serif' }}>
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Vamos incrementar sua segurança!</h1>
             <p className="text-lg md:text-2xl mb-2">
                 Reduza o risco da sua empresa, conte com profissionais dedicados e experts.
