@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect} from 'react';
 import Relogio from "../../Images/relogio.webp";
 
 const Benefits = () => {
