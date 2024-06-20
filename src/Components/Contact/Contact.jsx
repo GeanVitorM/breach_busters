@@ -6,7 +6,7 @@ import './contact.css';
 const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress }) => (
   <div id="contact" className="flex justify-center items-center py-8 bg-black" style={{ fontFamily: 'Poppins , sans-serif' }}>
     <div className="text-white max-w-md w-full px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Entre em contato com nossos especialistas!</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ fontFamily: ' Montserrat , sans-serif' }}>Entre em contato com nossos especialistas!</h1>
       <div className="flex justify-center items-center mb-6">
         <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
@@ -19,7 +19,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
         </div>
         <span className="ml-2 text-white">🔒</span>
       </div>
-      <div className="bg-black p-4 rounded-lg shadow-lg">
+      <div className="bg-black p-4 rounded-lg shadow-lg" style={{ fontFamily: ' Anonymous Pro , sans-serif' }}>
         <div className="text-left mb-4">
           <p className="text-base md:text-lg font-medium">
             Não precisamos convencer voce e seu time que a segurança é primordial,
