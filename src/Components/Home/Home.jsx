@@ -5,14 +5,14 @@ const Home = ({ bgColor, title, subTitle, text }) => {
   return (
     <div className={`flex mb-0 mt-0 m-0 items-center justify-center min-h-screen ${bgColor} text-white font-sans`}>
       <div className="md:flex flex-col md:flex-row md:items-center md:justify-between md:mx-12">
-        <div className="md:w-1/2 text-center md:text-left md:ml-8">
+        <div className="md:w-1/2 text-center md:text-left md:ml-16 md:mr-8"> {/* Aumentada a margem esquerda */}
           <h1 className="md:text-7xl text-6xl font-bold mt-12 md:mt-12" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
             {title}
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold md:mb-4 text-[#d11c9b]" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
             {subTitle}
           </h2>
-          <p className=" mb-8" style={{ fontFamily: 'Montserrat , sans-serif' }}>
+          <p className="mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {text}
           </p>
           <a href="#contact" className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">

@@ -22,7 +22,9 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
       <div className="bg-black p-4 rounded-lg shadow-lg">
         <div className="text-left mb-4">
           <p className="text-base md:text-lg font-medium">
-            Agora que você viu a importância do pentesting para seu negócio, vamos conversar a respeito.
+            Não precisamos convencer voce e seu time que a segurança é primordial,
+            mas precisamos que voce escolha o time certo para o trabalho, insira seu
+            e-mail para conversarmos sobre o escopo do nosso novo desafio!
           </p>
         </div>
         <div className="w-full">
@@ -93,11 +95,13 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
       </div>
       <div className="bg-black p-8 rounded-lg shadow-lg flex justify-between items-center">
         <div className="text-left">
-          <p className="text-lg font-medium mb-4">
-            Agora que você viu a importância do pentesting para seu negócio, vamos conversar a respeito.
+          <p className="text-lg font-medium mb-4 w-4/5">
+            Não precisamos convencer voce e seu time que a segurança é primordial,
+            mas precisamos que voce escolha o time certo para o trabalho, insira seu
+            e-mail para conversarmos sobre o escopo do nosso novo desafio!
           </p>
         </div>
-        <div className="w-1/2">
+        <div className="w-full">
           <form className="relative" onSubmit={handleSubmit}>
             <label className="block text-lg font-medium mb-2 mt-4" htmlFor="email">
               Qual é o seu e-mail empresarial?

@@ -37,12 +37,12 @@ const Benefits = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-start py-4 bg-[#202444] text-white mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      <div ref={cardsRef} className="w-full md:w-1/3 space-y-4">
+    <div className="md:flex md:flex-row md:justify-center md:items-start py-4 bg-[#202444] text-white mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <div ref={cardsRef} className="md:w-1/3 space-y-6 md:m-4">
         {cards.map(card => (
           <div
             key={card.id}
-            className="p-4 h-40 bg-[#303072] rounded-lg cursor-pointer border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg"
+            className="p-4 h-28 bg-[#303072] rounded-lg cursor-pointer border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg"
             style={{ borderColor: '#141492' }}
             onClick={() => handleCardClick(card)}
           >
@@ -54,7 +54,7 @@ const Benefits = () => {
         ))}
       </div>
       
-      <div className="mt-4 md:mt-0 md:ml-8 p-4 bg-[#303072] rounded-lg relative w-full md:w-1/3 lg:w-1/2" style={{ height: 'auto', minHeight: '34.3vw' }}>
+      <div className="md:flex md:mt-0 p-4 bg-[#303072] md:rounded-lg relative lg:w-1/2 md:mt-4 h-96">
         {selectedCard ? (
           <>
             <h2 className="text-2xl font-bold">{selectedCard.title}</h2>
