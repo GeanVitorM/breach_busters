@@ -8,10 +8,10 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const BenefictsServices = ({ benefitsData }) => {
     return (
-        <div className="bg-[#38347c] text-white py-16">
+        <div className="bg-[#38347c] text-white py-16" style={{ fontFamily: ' Montserrat , sans-serif' }}>
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-6">Benefícios</h2>
-                <p className="text-center mb-12">Ao simular ataques controlados, é possível identificar e corrigir vulnerabilidades antes que sejam exploradas por hackers maliciosos, mitigando riscos e protegendo seus dados e os de seus parceiros. Além disso, ajuda a cumprir requisitos regulatórios, proteger sua reputação e aumentar o conhecimento da equipe sobre práticas seguras de computação.</p>
+                <p className="text-center mb-12" >Ao simular ataques controlados, é possível identificar e corrigir vulnerabilidades antes que sejam exploradas por hackers maliciosos, mitigando riscos e protegendo seus dados e os de seus parceiros. Além disso, ajuda a cumprir requisitos regulatórios, proteger sua reputação e aumentar o conhecimento da equipe sobre práticas seguras de computação.</p>
                 
                 <div className="block md:hidden mb-20">
                     <Swiper

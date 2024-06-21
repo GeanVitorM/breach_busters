@@ -7,7 +7,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center px-4 py-4 md:mx-8 lg:mx-16 xl:mx-24 ${textColor}`}>
+            <div className={`flex justify-between items-center px-4 py-4 md:px-8 lg:px-16 xl:px-24 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
                         <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
@@ -19,7 +19,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
                         </h1>
                     </a>
                 </div>
-                <nav className="hidden md:flex space-x-4 md:space-x-6 lg:space-x-10 font-bold" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
+                <nav className="hidden md:flex space-x-4 md:space-x-6 lg:space-x-10 font-bold items-center" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
                     <a href="/About" className="hover:text-gray-200 relative">
                         Sobre
                         <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
@@ -54,7 +54,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
                         <HiX className="w-8 h-8 text-white" />
                     </button>
                 </div>
-                <nav className="flex flex-col items-center py-4 text-white">
+                <nav className="flex flex-col items-center py-4 text-white mt-4">
                     <ul className="flex flex-col space-y-4 text-center font-bold" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
                         <li>
                             <a href="/About" className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>

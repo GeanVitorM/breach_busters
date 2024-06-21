@@ -8,12 +8,13 @@ import logo from './../Images/Icone_Fundo_Transparente.webp';
 const Terms = () => {
     return (
         <>
-            <Header bgColor={logo}
+            <Header bgColor={bgColorTerms}
+                logo={logo}
                 linkContact={linkContactTerms}
                 textColor={textColorTerms} />
             <BannerInfo title={titleBannerTerms}
                 textColor={textColorTerms} />
-            <TextInfo text={DataTerms}/>
+            <TextInfo text={DataTerms} />
             <Footer />
         </>
     )

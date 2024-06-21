@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerServices = ({ title, description, buttonText, buttonLink, backgroundLeft, backgroundRight }) => {
   return (
-    <div className="flex justify-center items-center bg-gradient-to-r from-indigo-900 to-purple-700 p-6 md:p-10">
+    <div className="flex justify-center items-center bg-gradient-to-r from-indigo-900 to-purple-700 p-6 md:p-10" style={{ fontFamily: ' Montserrat , sans-serif' }}>
       <div className="flex flex-col lg:flex-row bg-gray-800 rounded-lg shadow-lg overflow-hidden max-w-5xl w-full">
         <div
           className="text-white flex items-center justify-center p-6 md:p-10"

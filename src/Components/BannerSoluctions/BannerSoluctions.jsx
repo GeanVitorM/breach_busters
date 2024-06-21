@@ -8,7 +8,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 const BannerSoluctions = ({ bannerItems }) => {
   return (
     <div className="flex flex-col items-center bg-[#131112] text-white">
-      <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4">
+      <h1 className="text-3xl font-bold mb-5 mt-10 text-center px-4" style={{ fontFamily: ' poppins, sans-serif' }}>
         Soluções personalizáveis Para Todas As Empresas
       </h1>
       <div className="w-full max-w-screen-xl px-4">
@@ -30,8 +30,8 @@ const BannerSoluctions = ({ bannerItems }) => {
                         className="h-28 w-28 object-cover mx-auto mb-2"
                       />
                     </div>
-                    <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-                    <p>{item.description}</p>
+                    <h2 className="text-lg font-semibold mb-2" style={{ fontFamily: ' poppins, sans-serif' }}>{item.title}</h2>
+                    <p style={{ fontFamily: ' Montserrat , sans-serif' }}>{item.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -52,8 +52,8 @@ const BannerSoluctions = ({ bannerItems }) => {
                     className="h-28 w-28 object-cover mx-auto mb-2"
                   />
                 </div>
-                <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-                <p>{item.description}</p>
+                <h2 className="text-lg font-semibold mb-2" style={{ fontFamily: ' poppins, sans-serif' }}>{item.title}</h2>
+                <p style={{ fontFamily: ' Montserrat , sans-serif' }}>{item.description}</p>
               </div>
             </div>
           ))}

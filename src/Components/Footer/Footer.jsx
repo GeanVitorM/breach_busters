@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="flex flex-wrap space-x-2">
               <a href="/Policy" className="hover:underline">Política</a>
               <a href="/Terms" className="hover:underline">Termos</a>
-              <a href="/Privacy" className="hover:underline">Privacidade</a>
+              <a href="/Privace" className="hover:underline">Privacidade</a>
               <a href="#!" className="hover:underline">Segurança</a>
             </div>
             <p>&copy; Breach buster todos os direitos reservados</p>

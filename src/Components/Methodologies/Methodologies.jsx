@@ -18,6 +18,7 @@ const Methodologies = ({ content }) => {
                         <div 
                             key={index} 
                             className={`flex flex-col md:flex-row ${isReverse ? 'md:flex-row-reverse' : ''} items-center`}
+                            style={{ fontFamily: ' Montserrat , sans-serif' }}
                         >
                             <div className="hidden md:flex w-full md:w-1/3 justify-center md:justify-start mb-4 md:mb-0 md:mr-4">
                                 

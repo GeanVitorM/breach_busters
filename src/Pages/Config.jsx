@@ -358,7 +358,7 @@ export const soluctionLinksRT = [
 //Terms
 export const bgColorTerms = "bg-[#f8f4f4]";
 export const linkContactTerms = "/";
-export const textColorTerms = "black";
+export const textColorTerms = "text-black";
 export const titleBannerTerms = "Termos."
 export const DataTerms = `
 1. Do Termo
@@ -411,14 +411,14 @@ export const DataTerms = `
 //Privace
 export const bgColorPrivace = "bg-[#f8f4f4]";
 export const linkContactPrivace = "/";
-export const textColorPrivace = "black";
+export const textColorPrivace = "text-black";
 export const titleBannerPrivace = "Privacidade."
 export const textPrivace = ``;
 
 //Policy
 export const bgColorPolicy = "bg-[#f8f4f4]";
 export const linkContactPolicy = "/";
-export const textColorPolicy = "black";
+export const textColorPolicy = "text-black";
 export const titleBannerPolicy = "Politica."
 export const textPolicy = `A Breach Busters está comprometida em operar em conformidade com todas as leis, regulamentos e normas aplicáveis. Reconhecemos a importância da conformidade legal para manter a confiança dos clientes, parceiros e partes interessadas.
 1.Entendemos a importância da proteção de dados pessoais e reconhecemos nossas responsabilidades sob a Lei Geral de Proteção de Dados (LGPD). Estamos comprometidos em proteger os dados pessoais dos nossos clientes e funcionários e em garantir que o tratamento desses dados seja realizado de acordo com os princípios estabelecidos na LGPD.

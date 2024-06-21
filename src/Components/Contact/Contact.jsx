@@ -166,7 +166,7 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      const response = await fetch('http://localhost:8000/Server/send-email.php', {
+      const response = await fetch('http://localhost:8000/mail-send.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
