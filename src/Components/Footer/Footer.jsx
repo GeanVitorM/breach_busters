@@ -36,12 +36,12 @@ const Footer = () => {
             <div className="mx-4">
               <h4 className="font-bold text-[#d11c9b]">Soluções</h4>
               <ul>
-                <li><a href="/Solutions/teste-de-intrusao" className="hover:underline">Teste de Intrusão</a></li>
-                <li><a href="/Solutions/Red-Team" className="hover:underline">Red Team</a></li>
-                <li><a href="/Solutions/treinamentos" className="hover:underline">Treinamentos</a></li>
-                <li><a href="/Solutions/pishing" className="hover:underline">Phishing</a></li>
+                <li><a href="/Soluctions/teste-de-intrusao" className="hover:underline">Teste de Intrusão</a></li>
+                <li><a href="/Soluctions/Red-Team" className="hover:underline">Red Team</a></li>
+                <li><a href="/Soluctions/treinamentos" className="hover:underline">Treinamentos</a></li>
+                <li><a href="/Soluctions/pishing" className="hover:underline">Phishing</a></li>
                 <li><a href="#" className="hover:underline">DDoS</a></li>
-                <li><a href="/Solutions/Engenharia-reversa" className="hover:underline">Engenharia reversa</a></li>
+                <li><a href="/Soluctions/Engenharia-reversa" className="hover:underline">Engenharia reversa</a></li>
               </ul>
             </div>
             <div className="mx-4">
