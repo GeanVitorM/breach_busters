@@ -1,9 +1,9 @@
 import BannerSoluctions from '../Components/BannerSoluctions/BannerSoluctions';
 import BenefictsServices from '../Components/BenefictsServices/BenefictsServices';
 import Header from '../Components/Header/Header';
-import Home from '../Components/Home/Home';
 import Methodologies from '../Components/Methodologies/Methodologies';
 import Contact from '../Components/Contact/Contact';
+import BannerMain from '../Components/BannerMain/BannerMain';
 import BannerServices from '../Components/BannerServices/BannerServices';
 import Footer from '../Components/Footer/Footer';
 import logo from './../Images/BREACH_BUSTER_HACKING_CLUB__1_-removebg-preview.webp'
@@ -16,8 +16,9 @@ const RedTeam = () => {
                 bgColor={bgColorRTHeader}
                 linkContact={linkHeaderRT}
                 textColor={textColorRT}
-                soluctionLinks={soluctionLinksRT} />
-            <Home bgColor={bgColorERHome}
+                soluctionLinks={soluctionLinksRT} 
+                logoSize="w-15 h-16"/>
+            <BannerMain bgColor={bgColorERHome}
                 title={TitleHomeRT}
                 text={homeTextRT} />
             <BannerSoluctions bannerItems={bannerItemsRT} />

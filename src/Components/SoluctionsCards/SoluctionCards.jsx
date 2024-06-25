@@ -7,9 +7,9 @@ const SoluctionCards = ({ soluctionData }) => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
-        <div id="solucoes" className="bg-[#202444] text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            <div className="container mx-auto py-4">
-                <div className="text-center mb-8 px-4">
+        <div id="solucoes" className="bg-[#202444] text-white mx-10 lg:mx-40 my-20" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <div className="container py-4">
+                <div className="text-center mb-4 px-4">
                     <h1 className="text-3xl font-bold">Soluções</h1>
                     <p className="text-lg">
                         Realize testes e forneça sistemas de alta qualidade e segurança.
@@ -34,24 +34,24 @@ const SoluctionCards = ({ soluctionData }) => {
                                     <img
                                         src={card.image}
                                         alt={`Imagem ${card.id}`}
-                                        className="w-32 h-32 object-cover rounded-lg"
+                                        className="w-24 h-24 object-cover rounded-lg"
                                     />
                                 </a>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                         {soluctionData.map(card => (
                             <a
                                 key={card.id}
                                 href={card.link}
-                                className="rounded-lg p-6 flex bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg hover:bg-opacity-20 hover:backdrop-blur-xl transition duration-300"
+                                className="rounded-lg p-4 flex bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg hover:bg-opacity-20 hover:backdrop-blur-xl transition duration-300"
                             >
                                 <img
                                     src={card.image}
                                     alt={`Imagem ${card.id}`}
-                                    className="w-20 h-20 object-cover mr-4 rounded-lg"
+                                    className="w-16 h-16 object-cover mr-4 rounded-lg"
                                 />
                                 <div className="flex-1">
                                     <p className="text-lg font-semibold mb-2">{card.title}</p>

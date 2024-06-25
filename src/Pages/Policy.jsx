@@ -11,7 +11,8 @@ const Policy = () => {
             <Header logo={logo}
             bgColor={bgColorPolicy}
                 textColor={textColorPolicy}
-                linkContact={textPolicy} />
+                linkContact={textPolicy}
+                logoSize="w-15 h-16" />
             <BannerInfo title={titleBannerPolicy} />
             <TextInfo text={textPolicy}
                 textColor={textColorPolicy} />

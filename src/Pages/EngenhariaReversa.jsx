@@ -1,6 +1,6 @@
 import BenefictsServices from "../Components/BenefictsServices/BenefictsServices";
+import BannerMain from '../Components/BannerMain/BannerMain';
 import Header from "../Components/Header/Header";
-import Home from "../Components/Home/Home";
 import Methodologies from "../Components/Methodologies/Methodologies";
 import Contact from "../Components/Contact/Contact";
 import { MethodologiesDataER, MethodologiesDataTI, TitleHomeER, benefitsDataER, bgColorERHeader, bgColorERHome, ethicalHackingContentER, homeTextER, linkHeaderER, soluctionLinksER, textColorER } from "./Config";
@@ -15,8 +15,9 @@ const EngenhariaReversa = () => {
             bgColor={bgColorERHeader}
                 linkContact={linkHeaderER} 
                 textColor={textColorER}
-                soluctionLinks={soluctionLinksER}/>
-            <Home bgColor={bgColorERHome}
+                soluctionLinks={soluctionLinksER}
+                logoSize="w-20 h-20"/>
+            <BannerMain bgColor={bgColorERHome}
                 title={TitleHomeER}
                 text={homeTextER} />
             <BenefictsServices benefitsData={benefitsDataER} />

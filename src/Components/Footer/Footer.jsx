@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col items-center md:items-start">
             <div className="flex flex-row items-center space-x-4">
-              <img src={skeletonLogo} alt="Logo" className="w-16 h-20 mb-4 md:mb-0 img-cover" />
+              <img src={skeletonLogo} alt="Logo" className="w-20 h-20 mb-4 md:mb-0 img-cover" />
               <h1 className="font-bold" style={{ fontFamily: 'Tomorrow, sans-serif' }}>Breach Busters</h1>
             </div>
             <div className="mt-4 text-center md:text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -65,7 +65,7 @@ const Footer = () => {
               <a href="/Privace" className="hover:underline">Privacidade</a>
               <a href="#!" className="hover:underline">Segurança</a>
             </div>
-            <p>&copy; Breach buster todos os direitos reservados</p>
+            <p>&copy; Breach Busters todos os direitos reservados</p>
           </div>
         </div>
       </div>

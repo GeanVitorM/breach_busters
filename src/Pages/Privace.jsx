@@ -10,7 +10,8 @@ const Privace = () => {
             <Header logo={logo}
                 bgColor={bgColorPrivace}
                 textColor={textColorPrivace}
-                linkContact={linkContactPrivace} />
+                linkContact={linkContactPrivace}
+                logoSize="w-15 h-16" />
             <TextInfo text={textPrivace} />
             <Footer />
         </>

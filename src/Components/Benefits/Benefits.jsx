@@ -36,7 +36,7 @@ const Benefits = () => {
   };
 
   return (
-    <div className="m-8 md:flex md:flex-row md:justify-center md:items-start py-4 bg-[#202444] text-white mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <div className="md:flex md:flex-row md:justify-center md:items-start py-2 bg-[#202444] text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="md:w-1/3 space-y-2 md:space-y-4 md:m-4">
         {cards.map(card => (
           <div
@@ -53,7 +53,7 @@ const Benefits = () => {
         ))}
       </div>
 
-      <div className="md:flex md:mt-0 p-4 bg-[#303072] rounded-lg relative mt-4 lg:w-1/2 md:mt-4 w-full flex flex-col">
+      <div className="md:flex md:mt-0 p-4 bg-[#303072] rounded-lg relative mt-4 lg:w-5/12 md:mt-4 w-full flex flex-col">
         {selectedCard ? (
           <div className="h-72 md:h-96">
             <h2 className="text-lg md:text-2xl font-bold text-[#d11c9b]">{selectedCard.title}</h2>

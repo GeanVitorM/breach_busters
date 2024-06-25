@@ -22,12 +22,12 @@ import img6 from './../Images/access-denied.webp';
 
 //Main page
 
-export const homeTitle = "Start Bust into the";
+export const homeTitle = "Start Bust Into The";
 export const bgColorHome = "bg-[#34347c]";
 export const bgColorHeader = "bg-[#34347c]";
 export const textColorHeader = "text-white"
 export const linkHeader = "#contact";
-export const subTitle = "Unexplored.";
+export const subTitle = ['Unexplored.', 'Breaches.', 'Possibilities.', 'Future.'];
 export const homeText = "Conte com profissionais dedicados para identificar brechas no seu ambiente e receba relatórios personalizados com informações relevantes para o seu negócio!";
 export const soluctionCards = [
     { id: 1, title: 'Teste de intrusão', image: img1, link: '/Soluctions/teste-de-intrusao' },
@@ -49,12 +49,12 @@ export const soluctionLinks = [
 
 //About Page
 
-export const aboutTitle = "Buscando um mundo digitalmente seguro...";
+export const aboutTitle = "Buscando um mundo digitalmente seguro";
 export const AboutbgColorHeader = "bg-[#34347c]";
 export const AboutBgColorHome = "bg-[#34347c]";
-export const textColorAbout = "text-white"
+export const textColorAbout = "text-white";
+export const subTitleAbout = [''];
 export const linkHeaderAbout = "#contact";
-export const subTitleAbout = "";
 export const homeTextAbout = "Conte com profissionais dedicados para identificar brechas no seu ambiente e receba relatórios personalizados com informações relevantes para o seu negócio!";
 
 export const soluctionLinksAbout = [
@@ -152,17 +152,17 @@ export const bannerItems = [
     {
         icon: recession,
         title: 'Visibilidade',
-        description: 'Garanta total visibilidade sobre seus ativos digitais e suas vulnerabilidades.'
+        description: 'de aumento do custo médio global de uma violação de dados em 3 anos. Em 2023 foi o prejuízo calculado foi de 4,45 milhões de dólares!'
     },
     {
         icon: up_arrow,
         title: 'Segurança',
-        description: 'Proteja seus dados e aplicativos com as soluções de segurança mais avançadas.'
+        description: 'menos chances de sofrer uma violação de segurança caso sua empresa realize um teste de penetração.'
     },
     {
         icon: logout,
         title: 'Controle',
-        description: 'Tenha controle total sobre sua infraestrutura de segurança com nossas ferramentas de gestão.'
+        description: 'das brechas envolvem algum tipo de falha técnica, como vulnerabilidades de software ou configurações inadequadas.'
     }
 ];
 

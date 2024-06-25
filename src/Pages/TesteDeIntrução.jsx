@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../Components/Home/Home';
+import BannerMain from '../Components/BannerMain/BannerMain';
 import BannerTs from '../Components/BannerSoluctions/BannerSoluctions';
 import Header from '../Components/Header/Header';
 import Contact from '../Components/Contact/Contact';
@@ -19,8 +19,9 @@ const TesteDi = () => {
       bgColor={bgColorTIHeader}
         linkContact={linkHeaderTI}
         textColor={textColorTI}
-        soluctionLinks={soluctionLinksTI}/>
-      <Home bgColor={bgColorTIHome}
+        soluctionLinks={soluctionLinksTI}
+        logoSize="w-20 h-20"/>
+      <BannerMain bgColor={bgColorTIHome}
         title={TitleHomeTI}
         text={homeTextTI}/>
       <BannerSoluctions bannerItems={bannerItems}/>

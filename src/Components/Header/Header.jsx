@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
 
-const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) => {
+const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], logoSize }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [solucoesOpen, setSolucoesOpen] = useState(false);
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center px-4 py-4 md:px-8 lg:px-16 xl:px-24 ${textColor}`}>
+            <div className={`flex justify-between items-center px-4 py-3 md:px-8 lg:px-20 xl:px-40 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
-                        <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
+                        <img src={logo} alt="Logo" className={logoSize} />
                     </a>
-                    <div className={`hidden md:block mx-4 border-l-2 h-8 md:h-12 ${textColor}`}></div>
+                    <div className={`hidden md:block mx-4 border-l-2 h-12 md:h-16 ${textColor}`}></div>
                     <a href="/">
                         <h1 className="text-lg md:text-xl font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
                             Breach Busters
                         </h1>
                     </a>
                 </div>
-                <nav className="hidden md:flex space-x-4 md:space-x-6 lg:space-x-10 font-bold items-center" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
+                <nav className="hidden md:flex space-x-6 lg:space-x-12 font-bold items-center" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
                     <a href="/About" className="hover:text-gray-200 relative">
                         Sobre
                         <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
@@ -45,7 +45,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [] }) 
             <div className={`fixed top-0 right-0 h-full max-w-xs w-full ${textColor} bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20 backdrop-blur-lg`}>
                 <div className="flex justify-between items-center px-4 py-6">
                     <a href="/" className="flex items-center">
-                        <img src={logo} alt="Logo" className="w-10 h-10" />
+                        <img src={logo} alt="Logo" className="w-20 h-12" />
                         <h1 className="text-lg font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
                             Breach Busters
                         </h1>

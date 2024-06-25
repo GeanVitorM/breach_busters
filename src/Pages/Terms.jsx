@@ -11,7 +11,8 @@ const Terms = () => {
             <Header bgColor={bgColorTerms}
                 logo={logo}
                 linkContact={linkContactTerms}
-                textColor={textColorTerms} />
+                textColor={textColorTerms} 
+                logoSize="w-15 h-16"/>
             <BannerInfo title={titleBannerTerms}
                 textColor={textColorTerms} />
             <TextInfo text={DataTerms} />
