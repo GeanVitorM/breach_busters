@@ -8,6 +8,7 @@ import Footer from "../Components/Footer/Footer";
 import logo from './../Images/Icone_Fundo_Transparente.png'
 import { AboutBgColorHome, AboutbgColorHeader, aboutTitle, linkHeader,subTitleAbout,textColorAbout } from "./Config";
 import BannerMain from "../Components/BannerMain/BannerMain";
+import Actions from "../Components/Actions/Actions";
 
 const About = () => {
     return (
@@ -24,6 +25,7 @@ const About = () => {
             <AboutBB />
             <ValuesAndZens />
             <BlackSection />
+            <Actions />
             <Identified />
             <Footer />
         </>

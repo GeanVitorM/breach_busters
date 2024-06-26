@@ -49,7 +49,7 @@ export const soluctionLinks = [
 
 //About Page
 
-export const aboutTitle = "Buscando um mundo digitalmente seguro";
+export const aboutTitle = "Buscando um mundo digitalmente seguro...";
 export const AboutbgColorHeader = "bg-[#34347c]";
 export const AboutBgColorHome = "bg-[#34347c]";
 export const textColorAbout = "text-white";

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import errorImg from '../../Images/erro.png';
 import successImg from '../../Images/aceitaram.png';
+import startImg from '../../Images/person.png'; // Adicione a imagem do início
+import endImg from '../../Images/security (1).webp'; // Adicione a imagem do final
 import './contact.css';
 
 const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress }) => (
@@ -8,6 +10,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
     <div className="text-white max-w-md w-full px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ fontFamily: 'Montserrat, sans-serif' }}>Entre em contato com nossos especialistas!</h1>
       <div className="flex justify-center items-center mb-6">
+        <img src={startImg} alt="Início" className="w-6 h-6 mr-2" />
         <div className="w-3/4 h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
           <div
             className="progressbar-complete"
@@ -17,7 +20,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
           </div>
           <span className="progress text-white text-xs md:text-sm">{progress}%</span>
         </div>
-        <span className="ml-2 text-white">🔒</span>
+        <img src={endImg} alt="Fim" className="w-6 h-6 ml-2" />
       </div>
       <div className="bg-black p-4 rounded-lg shadow-lg" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
         <div className="text-left mb-4">
@@ -95,6 +98,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
         </div>
         <div className="w-1/2">
           <div className="flex justify-center items-center mb-6">
+            <img src={startImg} alt="Início" className="w-6 h-6 mr-2" />
             <div className="w-full h-6 bg-gray-700 rounded-full overflow-hidden relative progressbar-container">
               <div
                 className="progressbar-complete"
@@ -104,7 +108,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
               </div>
               <span className="progress text-white text-sm" style={{ fontFamily: 'Poppins, sans-serif' }}>Quase lá!</span>
             </div>
-            <span className="ml-2 text-white">🔒</span>
+            <img src={endImg} alt="Fim" className="w-6 h-6 ml-2" />
           </div>
           <div className="bg-black p-4 rounded-lg shadow-lg">
             <form onSubmit={handleSubmit}>
@@ -145,7 +149,6 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
                   <img src={successImg} alt="Sucesso" className="inline-block ml-1 w-4 h-4" />
                 </p>
               )}
-
             </form>
           </div>
         </div>
@@ -169,7 +172,7 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      const response = await fetch('http://localhost:8000/mail-send.php', {
+      const response = await fetch('https://breachbusters.com.br/mail-send.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString(),

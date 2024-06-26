@@ -14,7 +14,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
                     </a>
                     <div className={`hidden md:block mx-4 border-l-2 h-12 md:h-16 ${textColor}`}></div>
                     <a href="/">
-                        <h1 className="text-lg md:text-xl font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
+                        <h1 className="text-lg md:text-2xl font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
                             Breach Busters
                         </h1>
                     </a>

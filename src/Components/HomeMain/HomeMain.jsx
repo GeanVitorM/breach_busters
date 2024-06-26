@@ -13,8 +13,8 @@ const HomeMain = ({ bgColor, title, text , subTitle}) => {
           <h2 className="text-4xl md:text-6xl font-bold md:mb-4 text-[#d11c9b]" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
             <Typed
               strings={subTitle}
-              typeSpeed={50}
-              backSpeed={30}
+              typeSpeed={120}
+              backSpeed={50}
               loop
             />
           </h2>

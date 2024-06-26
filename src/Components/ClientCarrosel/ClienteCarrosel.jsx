@@ -44,7 +44,7 @@ const ClientCarrossel = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] py-16">
+        <div className="bg-gradient-to-r from-[#1e3a8a] to-[#7e22ce] py-16">
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold text-white mb-8">Precisa de mais provas?</h2>
                 <div className="mx-auto max-w-xl relative">
