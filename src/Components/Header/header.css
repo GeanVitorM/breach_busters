@@ -1,0 +1,73 @@
+.contact-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(to right, #9b59b6, #3498db);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid; 
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s;
+}
+
+.contact-button::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #9b59b6, #3498db);
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.contact-button:hover {
+  background: transparent;
+  color: #D01B9B;
+}
+
+.contact-button:hover::before {
+  background: transparent;
+  border: 3px solid #D01B9B;
+}
+
+.contact-button-icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.contact-button-icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #D01B9B;
+  transition: all 0.35s;
+}
+
+.contact-button:hover + .contact-button-icon {
+  border: 3px solid #D01B9B;
+  right: -25%;
+}

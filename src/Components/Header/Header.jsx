@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
+import './header.css';
 
 const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], logoSize }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,9 +33,16 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
                         Soluções
                         <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
                     </a>
-                    <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 md:px-6 lg:px-8 rounded-full relative">
-                        Contact Us
-                    </a>
+                    <div className="contact-button-wrapper">
+                        <a href={linkContact} className="contact-button">
+                            Contact Us
+                        </a>
+                        <div className="contact-button-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                            </svg>
+                        </div>
+                    </div>
                 </nav>
                 <div className="block md:hidden">
                     <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" className="focus:outline-none">
@@ -45,7 +53,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
             <div className={`fixed top-0 right-0 h-full max-w-xs w-full ${textColor} bg-opacity-90 ${bgColor} shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden z-20 backdrop-blur-lg`}>
                 <div className="flex justify-between items-center px-4 py-6">
                     <a href="/" className="flex items-center">
-                        <img src={logo} alt="Logo" className="w-20 h-12" />
+                        <img src={logo} alt="Logo" className="w-10 h-15" />
                         <h1 className="text-lg font-bold tracking-wide ml-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
                             Breach Busters
                         </h1>
@@ -95,9 +103,16 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
                             )}
                         </li>
                         <li>
-                            <a href={linkContact} className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMenuOpen(false)}>
-                                Contact Us
-                            </a>
+                            <div className="contact-button-wrapper">
+                                <a href={linkContact} className="contact-button" onClick={() => setMenuOpen(false)}>
+                                    Contact Us
+                                </a>
+                                <div className="contact-button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
