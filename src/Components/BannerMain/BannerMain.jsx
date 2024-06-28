@@ -16,7 +16,7 @@ const BannerMain = ({ bgColor, title, text , subTitle}) => {
           <p className="mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {text}
           </p>
-          <a href="#contact" className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
+          <a href="#contact" className="glow-on-hover bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
             BECOME BREACHLESS
           </a>
         </div>

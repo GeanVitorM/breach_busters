@@ -20,8 +20,8 @@ const SoluctionCards = ({ soluctionData }) => {
                 </div>
                 {isMobile ? (
                     <Swiper
-                        spaceBetween={16}
-                        slidesPerView={1}
+                        spaceBetween={8}
+                        slidesPerView={2}
                         centeredSlides={true}
                         pagination={{ clickable: true }}
                         loop={true}
@@ -34,7 +34,7 @@ const SoluctionCards = ({ soluctionData }) => {
                                     <img
                                         src={card.image}
                                         alt={`Imagem ${card.id}`}
-                                        className="w-24 h-24 object-cover rounded-lg"
+                                        className="w-36 h-36 object-cover rounded-lg"
                                     />
                                 </a>
                             </SwiperSlide>
@@ -61,8 +61,10 @@ const SoluctionCards = ({ soluctionData }) => {
                     </div>
                 )}
             </div>
-            <div className="flex justify-center mt-4">
-                <a href="#contact" className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-8 rounded-full">
+            <div className="soluction-button text-center mt-4">
+                <a 
+                    href="#contact" 
+                    className="glow-on-hover relative  px-8 py-2 text-lg font-bold text-white bg-gradient-to-r from-purple-400 to-blue-400 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5 active:shadow-md">
                     BECOME BREACHLESS
                 </a>
             </div>

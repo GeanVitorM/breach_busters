@@ -1,5 +1,5 @@
 import React from 'react';
-import './bannerService.css';
+import '../../styles/buttonNeon.css';
 
 const BannerServices = ({ title, description, buttonText, buttonLink, backgroundLeft, backgroundRight }) => {
   return (
@@ -12,17 +12,20 @@ const BannerServices = ({ title, description, buttonText, buttonLink, background
           <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center lg:text-left">{title}</p>
         </div>
         <div
-          className="text-white p-6 md:p-10 relative"
+          className="text-white p-6 md:p-10 relative flex justify-center items-center"
           style={{ background: backgroundRight }}
         >
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-sm md:text-base mb-6">{description}</p>
-          <a
-            href={buttonLink}
-            className="glow-on-hover font-bold" style={{fontFamily: 'Montserrat, sans-serif'}}
-          >
-            {buttonText}
-          </a>
+          <div className="text-center">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">{title}</h2>
+            <p className="text-sm md:text-base mb-6">{description}</p>
+            <a
+              href={buttonLink}
+              className="glow-on-hover font-bold"
+              style={{ fontFamily: 'Montserrat, sans-serif' }}
+            >
+              {buttonText}
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const BannerSoluctions = ({ bannerItems }) => {
                       <img
                         src={item.icon}
                         alt={`Ícone ${index + 1}`}
-                        className="h-18 w-18 object-cover mx-2 mb-2"
+                        className="h-36 w-36 object-cover ml-20"
                       />
                     </div>
                     <h2 className="text-lg font-semibold mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>{item.title}</h2>

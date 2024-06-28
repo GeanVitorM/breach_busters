@@ -46,9 +46,9 @@ const BenefictsServices = ({ benefitsData }) => {
         </div>
         
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full">
+          <a href="#contact" className="glow-on-hover bg-gradient-to-r from-purple-400 to-blue-400 text-white font-bold py-3 px-8 rounded-full">
             BECOME BREACHLESS
-          </button>
+          </a>
         </div>
       </div>
     </div>
