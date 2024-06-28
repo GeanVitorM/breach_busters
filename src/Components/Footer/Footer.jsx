@@ -62,7 +62,7 @@ const Footer = () => {
               <a href="/Policy" className="hover:underline">Política</a>
               <a href="/Terms" className="hover:underline">Termos</a>
               <a href="/Privace" className="hover:underline">Privacidade</a>
-              <a href="/" className="hover:underline">Segurança</a>
+              <a href="/Security" className="hover:underline">Segurança</a>
             </div>
             <p>&copy; Breach Busters todos os direitos reservados</p>
           </div>

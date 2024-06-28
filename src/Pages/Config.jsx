@@ -354,6 +354,41 @@ export const soluctionLinksRT = [
     { href: '/Soluctions/pishing', text: 'Phishing' },
     { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
 ];
+//Pishing
+export const bgColorHeaderPishing = "bg-[#131112]";
+export const linkHeaderPishing = "/contact";
+export const textColorPishing = "text-white"
+export const soluctionLinksPishing = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/Red-Team', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
+
+//Treinamentos
+export const bgColorHeaderTreinamentos = "bg-[#131112]";
+export const linkHeaderTreinamentos = "/contact";
+export const textColorTreinamentos = "text-white"
+export const soluctionLinksTreinamentos = [
+    { href: '/Soluctions/teste-de-intrusao', text: 'Teste de intrusão' },
+    { href: '/Soluctions/Red-Team', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
+
+//Teste de estresse
+export const bgColorHeaderTE = "bg-[#131112]";
+export const linkHeaderTE = "/contact";
+export const textColorTE = "text-white"
+export const soluctionLinksTE = [
+    { href: '/Soluctions/Red-Team', text: 'Teste de intrusão' },
+    { href: '/Soluctions/treinamentos', text: 'Treinamentos' },
+    { href: '/Soluctions/engenharia-reversa', text: 'Engenharia Reversa' },
+    { href: '/Soluctions/pishing', text: 'Phishing' },
+    { href: '/Soluctions/teste-de-estresse', text: 'Teste de estresse' },
+];
 
 //Terms
 export const bgColorTerms = "bg-[#f8f4f4]";
@@ -475,3 +510,9 @@ Não negociamos.
 Respeitamos.
 
 Seus dados usados somente para nosso trabalho e só!`;
+
+//Security
+export const bgColorSecurity = "bg-[#f8f4f4]";
+export const linkContactSecurity = "/";
+export const textColorSecurity = "text-black";
+export const titleBannerSecyrity = "Segurança."

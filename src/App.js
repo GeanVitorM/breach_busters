@@ -11,6 +11,7 @@ import TesteDeEstresse from './Pages/TesteDeEstresse';
 import Terms from './Pages/Terms';
 import Privace from './Pages/Privace';
 import Policy from './Pages/Policy';
+import Security from './Pages/Secutity';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route path="/Soluctions/Red-Team" element={<RedTeam />} />
         <Route path="/Soluctions/treinamentos" element={<Treinamento />} />
         <Route path="/Soluctions/pishing" element={<Phishing />} />
-        <Route path="/Soluctions/teste-de-estresse" element={<TesteDeEstresse />} /> 
+        <Route path="/Soluctions/teste-de-estresse" element={<TesteDeEstresse />} />
+        <Route path="/Security" element={<Security />} />
         <Route path="/Terms" element={<Terms />} /> 
         <Route path="/Privace" element={<Privace />} /> 
         <Route path="/Policy" element={<Policy />} /> 
