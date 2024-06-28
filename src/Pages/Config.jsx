@@ -380,7 +380,7 @@ export const soluctionLinksTreinamentos = [
 
 //Teste de estresse
 export const bgColorHeaderTE = "bg-[#131112]";
-export const linkHeaderTE = "/contact";
+export const linkHeaderTE = "/";
 export const textColorTE = "text-white"
 export const soluctionLinksTE = [
     { href: '/Soluctions/Red-Team', text: 'Teste de intrusão' },

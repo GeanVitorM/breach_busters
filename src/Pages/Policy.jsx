@@ -9,7 +9,7 @@ const Policy = () => {
     return (
         <>
             <Header logo={logo}
-            bgColor={bgColorPolicy}
+                bgColor={bgColorPolicy}
                 textColor={textColorPolicy}
                 linkContact={textPolicy}
                 logoSize="w-15 h-16" />
