@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import Relogio from "../../Images/relogio.webp";
 
 const Benefits = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
-  const [textToShow, setTextToShow] = useState('');
-  const [typingIndex, setTypingIndex] = useState(0);
-
   const cards = [
     { id: 1, title: 'Por Que', subTitle: 'Saiba porque a Breach Busters é a escolha ideal', content: 'A Breach Busters domina o mercado Brasileiro e entende o contexto de segurança, aliamos paixão experiência e expertise formando uma trindade perfeita para ajudar o seu negocio a ser mais seguro.' },
     { id: 2, title: 'Privacidade', subTitle: 'Projetos em nivel TOP SECRET.', content: 'Seus dados estão seguros conosco, temos politicas severas a respeito dos dados dos nossos clientes e em breve atestaremos essas politicas com certificações como a 27001.Confidencialidade: Os projetos são confidenciais e somente para pessoas autorizadas. Todos os dados passam pelo processo de tratamento, tendo como fim sua destruição total.' },
     { id: 3, title: 'Profissionais', subTitle: 'Apaixonados pelo que fazem, e relevante pelo que entregam.', content: 'Somos fascinados pelo nosso trabalho, contamos com vasta experiência e certificados relevantes do mercado.Nosso time participa ativamente de comunidades, projetos open source e disseminam o conhecimento em prol de uma Internet mais segura ' }
   ];
+
+  const [selectedCard, setSelectedCard] = useState(cards[0]);
+  const [textToShow, setTextToShow] = useState('');
+  const [typingIndex, setTypingIndex] = useState(0);
 
   useEffect(() => {
     if (selectedCard) {
@@ -41,7 +41,7 @@ const Benefits = () => {
         {cards.map(card => (
           <div
             key={card.id}
-            className="p-2 md:p-4 h-24 md:h-32 bg-[#303072] rounded-lg cursor-pointer border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg"
+            className={`p-2 md:p-4 h-24 md:h-32 bg-[#303072] rounded-lg border-l-4 flex items-center justify-center text-center transition-all duration-300 ease-in-out transform ${selectedCard.id === card.id ? 'scale-105 bg-opacity-30 backdrop-filter backdrop-blur-lg' : ''}`}
             style={{ borderColor: '#d11c9b' }}
             onClick={() => handleCardClick(card)}
           >
