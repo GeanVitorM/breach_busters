@@ -2,13 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import clienteLogo from '../../Images/careca.png'; // Substitua com o caminho real da logo
+import clienteLogo from '../../Images/careca.png'; 
 
 const ClientCarrossel = () => {
-    // Array de objetos com os dados dos depoimentos
+
     const testimonials = [
         {
-            logo: clienteLogo, // Caminho da imagem da logo
+            logo: clienteLogo,
             name: "CLIENTE LOGO",
             quote: "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."
         },
@@ -32,7 +32,7 @@ const ClientCarrossel = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false, // Desabilitar as setas de navegação
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768,

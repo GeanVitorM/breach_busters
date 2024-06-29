@@ -25,7 +25,7 @@ const About = () => {
             <AboutBB />
             <ValuesAndZens />
             <BlackSection />
-            <Actions />
+            {/* <Actions /> */}
             <Identified />
             <Footer />
         </>

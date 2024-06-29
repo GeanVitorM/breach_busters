@@ -20,7 +20,7 @@ const SoluctionCards = ({ soluctionData }) => {
                 </div>
                 {isMobile ? (
                     <Swiper
-                        spaceBetween={8}
+                        spaceBetween={50}
                         slidesPerView={2}
                         centeredSlides={true}
                         pagination={{ clickable: true }}
@@ -30,11 +30,11 @@ const SoluctionCards = ({ soluctionData }) => {
                         {soluctionData.map(card => (
                             <SwiperSlide key={card.id}>
                                 <a href={card.link} className="flex flex-col items-center">
-                                    <p className="text-lg font-semibold mb-2">{card.title}</p>
+                                    <p className="text-lg text-center font-semibold mb-2">{card.title}</p>
                                     <img
                                         src={card.image}
                                         alt={`Imagem ${card.id}`}
-                                        className="w-36 h-36 object-cover rounded-lg"
+                                        className="w-18 h-18 object-cover"
                                     />
                                 </a>
                             </SwiperSlide>

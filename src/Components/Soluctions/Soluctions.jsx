@@ -41,9 +41,8 @@ const Soluctions = () => {
                             slidesPerView: 3,
                         },
                     }}
-                    navigation
                     pagination={{ clickable: true }}
-                    modules={[Navigation, Pagination]}
+                    modules={[Pagination]} // Remove Navigation daqui
                 >
                     {cards.map((card, index) => (
                         <SwiperSlide key={index}>
@@ -57,7 +56,7 @@ const Soluctions = () => {
                                         />
                                     </div>
                                     <h2 className="text-lg font-semibold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>{card.title}</h2>
-                                    <p style={{ fontFamily: 'Montserrat, sans-serif' }} >{card.text}</p>
+                                    <p style={{ fontFamily: 'Montserrat, sans-serif' }}>{card.text}</p>
                                 </div>
                             </div>
                         </SwiperSlide>

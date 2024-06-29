@@ -69,7 +69,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
             )}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 mt-3 rounded-full focus:outline-none"
+              className="glow-on-hover w-full bg-gradient-to-r from-purple-400 to-blue-400  text-white font-bold py-2 px-4 mt-3 rounded-full focus:outline-none"
             >
               Enviar
             </button>
