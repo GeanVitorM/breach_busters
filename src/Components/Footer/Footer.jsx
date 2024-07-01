@@ -1,15 +1,19 @@
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import skeletonLogo from '../../Images/BREACH BUSTER HACKING CLUB.png';
+import skeletonLogo from '../../Images/BREACH_BUSTER_HACKING_CLUB__1_-removebg-preview.webp';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-2">
-      <div className="container mx-auto md:px-2 lg:px-14">
+    <footer className="bg-black text-white py-2" style={{ fontFamily: 'Tomorrow, sans-serif' }}>
+      <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col items-center md:items-start text-center md:text-left md:mb-0">
-            <div className="flex justify-center md:justify-start mb-4">
-              <img src={skeletonLogo} alt="Logo" className="w-1/2 h-auto md:w-1/3 md:h-1/3" />
+            <div className="flex justify-center md:justify-start mb-4 items-center space-x-4">
+              <img src={skeletonLogo} alt="Logo" className="w-1/2 h-auto md:w-1/6 md:h-1/3" />
+              <div className="flex flex-col items-center md:items-start">
+                <span className="text-2xl md:text-3xl lg:text-4xl font-bold leading-none" style={{ fontFamily: 'Press Start 2P, sans-serif' }}>Breach</span>
+                <span className="text-2xl md:text-3xl lg:text-4xl font-bold leading-none" style={{ fontFamily: 'Press Start 2P, sans-serif' }}>Busters</span>
+              </div>
             </div>
             <div className="mt-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               <h3 className="text-[#d11c9b] font-bold">Whatsapp</h3>

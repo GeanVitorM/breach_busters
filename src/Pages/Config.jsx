@@ -30,12 +30,12 @@ export const linkHeader = "#contact";
 export const subTitle = ['Unexplored.', 'Breaches.', 'Possibilities.', 'Future.'];
 export const homeText = "Conte com profissionais dedicados para identificar brechas no seu ambiente e receba relatórios personalizados com informações relevantes para o seu negócio!";
 export const soluctionCards = [
-    { id: 1, title: 'Teste de intrusão', image: img1, link: '/Soluctions/teste-de-intrusao' },
-    { id: 2, title: 'Treinamentos', image: img2, link: '/Soluctions/treinamentos' },
-    { id: 3, title: 'Engenharia Reversa', image: img3, link: '/Soluctions/engenharia-reversa' },
-    { id: 4, title: 'Red Team', image: img4, link: '/Soluctions/red-team' },
-    { id: 5, title: 'Phishing', image: img5, link: '/Soluctions/pishing' },
-    { id: 6, title: 'Teste de estresse', image: img6, link: '/Soluctions/teste-de-estresse' }
+    { id: 1, title: 'Teste de intrusão', image: img1, link: '/Soluctions/teste-de-intrusao' , description: 'Simule ataques para identificar brechas no seu sistema.'},
+    { id: 2, title: 'Treinamentos', image: img2, link: '/Soluctions/treinamentos', description: 'Capacite sua equipe para seguir as melhores praticas de segurança.' },
+    { id: 3, title: 'Engenharia Reversa', image: img3, link: '/Soluctions/engenharia-reversa', description: 'Revise seu software para verificação de vunerabilidades.' },
+    { id: 4, title: 'Red Team', image: img4, link: '/Soluctions/red-team' , description: 'Contrate uma equipe para simular um ataque real em seu ambiente.'},
+    { id: 5, title: 'Phishing', image: img5, link: '/Soluctions/pishing' , description: 'Teste de phishing para mensurar a segurança do seu negocio.'},
+    { id: 6, title: 'Teste de estresse', image: img6, link: '/Soluctions/teste-de-estresse', description: 'Verifique a capacidade do seu sistema em lidar com grandes Cargas.' }
 ];
 
 export const soluctionLinks = [

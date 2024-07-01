@@ -22,7 +22,7 @@ body {
   left: 0;
   top: 0;
   height: 100%;
-  width: 50%; /* Inicialmente começa em 50% */
+  width: 50%;
   background-color: #5225bd;
   border-radius: 10px;
   z-index: 1;
@@ -49,7 +49,7 @@ body {
 
 @keyframes g {
   0% { background-color: #5225bd; }
-  50% { background-color: #303072; }
+  50% { background-color: #5225bd; }
   100% { background-color: #5225bd; }
 }
 

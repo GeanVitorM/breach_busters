@@ -69,7 +69,7 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
             )}
             <button
               type="submit"
-              className="glow-on-hover w-full bg-gradient-to-r from-purple-400 to-blue-400  text-white font-bold py-2 px-4 mt-3 rounded-full focus:outline-none"
+              className="glow-on-hover w-full bg-gradient-to-r from-purple-400 to-blue-400 text-white font-bold py-2 px-4 mt-3 rounded-full focus:outline-none"
             >
               Enviar
             </button>
@@ -82,8 +82,8 @@ const ContactMobile = ({ handleSubmit, handleChange, formData, status, progress 
 
 const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress }) => (
   <div id="contact" className="flex justify-center items-center py-20 bg-black w-full">
-    <div className="text-white max-w-5xl w-full px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: 'Popins , sans-serif' }}>Entre em contato com nossos especialistas!</h1>
+    <div className="text-white max-w-5xl w-full px-4 sm:px-6 lg:px-8 m-44 mt-0 mb-0">
+      <h1 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: 'Popins, sans-serif' }}>Entre em contato com nossos especialistas!</h1>
       <div className="flex justify-between items-start mb-8">
         <div className="w-1/2 pr-8">
           <p className="text-2xl font-medium" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
@@ -110,9 +110,9 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
             </div>
             <img src={endImg} alt="Fim" className="w-6 h-6 ml-2" />
           </div>
-          <div className="bg-black p-4 rounded-lg shadow-lg">
-            <form onSubmit={handleSubmit}>
-              <label className="block text-lg font-medium mb-2" htmlFor="email" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
+          <div className="bg-black p-2 rounded-lg shadow-lg">
+            <form onSubmit={handleSubmit} className="my-8">
+              <label className="block text-lg font-medium mb-1" htmlFor="email" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>
                 Qual é o seu e-mail empresarial?
               </label>
               <input
@@ -149,6 +149,14 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
                   <img src={successImg} alt="Sucesso" className="inline-block ml-1 w-4 h-4" />
                 </p>
               )}
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="w-2/3 mt-2 bg-gradient-to-r from-purple-400 to-blue-400 text-white font-bold py-2 px-4 rounded-lg focus:outline-none"
+                >
+                  Enviar
+                </button>
+              </div>
             </form>
           </div>
         </div>

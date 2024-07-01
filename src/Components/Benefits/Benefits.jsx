@@ -36,7 +36,7 @@ const Benefits = () => {
   };
 
   return (
-    <div className="md:flex md:flex-row md:justify-center md:items-start py-2 bg-[#202444] text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <div className="md:flex md:flex-row md:justify-center md:items-start py-2 bg-[#202444] text-white md:m-28 md:mt-0 md:mb-0" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="md:w-1/3 space-y-2 md:space-y-4 md:m-4">
         {cards.map(card => (
           <div
