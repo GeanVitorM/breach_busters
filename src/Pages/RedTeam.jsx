@@ -17,7 +17,7 @@ const RedTeam = () => {
                 linkContact={linkHeaderRT}
                 textColor={textColorRT}
                 soluctionLinks={soluctionLinksRT} 
-                logoSize="w-15 h-16"/>
+                logoSize="w-28 h-28 p-3"/>
             <BannerMain bgColor={bgColorERHome}
                 title={TitleHomeRT}
                 text={homeTextRT} />

@@ -12,7 +12,7 @@ const Phishing = () => {
                 linkContact={linkHeaderPishing}
                 textColor={textColorPishing}
                 soluctionLinks={soluctionLinksPishing}
-                logoSize="w-20 h-20" />
+                logoSize="w-28 h-28 p-3" />
             <ErrorComponent />
             <Footer />
         </>

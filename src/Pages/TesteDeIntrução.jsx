@@ -20,7 +20,7 @@ const TesteDi = () => {
         linkContact={linkHeaderTI}
         textColor={textColorTI}
         soluctionLinks={soluctionLinksTI}
-        logoSize="w-20 h-20"/>
+        logoSize="w-28 h-28 p-3"/>
       <BannerMain bgColor={bgColorTIHome}
         title={TitleHomeTI}
         text={homeTextTI}/>

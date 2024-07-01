@@ -70,7 +70,7 @@ const SoluctionCards = ({ soluctionData }) => {
             <div className="soluction-button text-center mt-4">
                 <a 
                     href="#contact" 
-                    className="glow-on-hover relative px-8 py-2 text-lg font-bold text-white bg-gradient-to-r from-purple-400 to-blue-400 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5 active:shadow-md">
+                    className="relative px-8 py-2 text-lg font-bold hover:from-purple-600 hover:to-blue-600 shadow-md hover:shadow-lg text-white bg-gradient-to-r from-purple-400 to-blue-400 rounded-lg transition-transform transform hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5 active:shadow-md">
                     BECOME BREACHLESS
                 </a>
             </div>

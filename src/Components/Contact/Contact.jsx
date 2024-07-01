@@ -152,7 +152,7 @@ const ContactDesktop = ({ handleSubmit, handleChange, formData, status, progress
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="w-2/3 mt-2 bg-gradient-to-r from-purple-400 to-blue-400 text-white font-bold py-2 px-4 rounded-lg focus:outline-none"
+                  className="w-2/3 mt-2 bg-gradient-to-r from-purple-400 to-blue-400 text-white hover:from-purple-600 hover:to-blue-600 shadow-md hover:shadow-lg font-bold py-2 px-4 rounded-lg focus:outline-none"
                 >
                   Enviar
                 </button>

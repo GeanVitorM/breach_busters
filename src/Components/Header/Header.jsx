@@ -7,7 +7,7 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
 
     return (
         <header className={`fixed top-0 left-0 w-full ${bgColor} z-10 shadow-lg`}>
-            <div className={`flex justify-between items-center px-4 py-3 md:px-8 lg:px-20 xl:px-40 md:m-24 md:mt-0 md:mb-0 ${textColor}`}>
+            <div className={`flex justify-between items-center px-2 py-2 md:px-8 lg:px-20 xl:px-40 md:m-24 md:mt-0 md:mb-0 ${textColor}`}>
                 <div className="flex items-center">
                     <a href="/">
                         <img src={logo} alt="Logo" className={logoSize} />
@@ -32,9 +32,9 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
                         Soluções
                         <span className={`block h-0.5 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-200 ${textColor}`}></span>
                     </a>
-                    <div className='py-2 px-8 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600'>
-                        <a href={linkContact} className="">
-                            Contact Us
+                    <div className='py-2 px-4 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 shadow-md hover:shadow-lg transition duration-300'>
+                        <a href={linkContact} className="text-white hover:text-gray-200">
+                            Entre Em Contato
                         </a>
                     </div>
                 </nav>
@@ -97,15 +97,10 @@ const Header = ({ logo, bgColor, textColor, linkContact, soluctionLinks = [], lo
                             )}
                         </li>
                         <li>
-                            <div className="contact-button-wrapper">
-                                <a href={linkContact} className="contact-button" onClick={() => setMenuOpen(false)}>
+                            <div className='py-2 px-8 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-600 hover:to-blue-600 shadow-md hover:shadow-lg transition duration-300'>
+                                <a href={linkContact} className="text-white hover:text-gray-200" onClick={() => setMenuOpen(false)}>
                                     Contact Us
                                 </a>
-                                <div className="contact-button-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-                                    </svg>
-                                </div>
                             </div>
                         </li>
                     </ul>

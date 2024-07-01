@@ -19,7 +19,7 @@ const Footer = () => {
               <h3 className="text-[#d11c9b] font-bold">Whatsapp</h3>
               <p className="text-lg font-bold">(123) 456 - 7890</p>
               <h3 className="mt-2 text-[#d11c9b] font-bold">Email</h3>
-              <p className="text-lg font-bold">hello@reallygreatsite.com</p>
+              <p className="text-lg font-bold">comercial@breachbusters.com.br</p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 mt-4 md:mt-0 md:flex md:justify-start text-center md:text-left" style={{ fontFamily: 'Anonymous Pro, sans-serif' }}>

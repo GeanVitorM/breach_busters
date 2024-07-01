@@ -151,17 +151,17 @@ export const ethicalHackingContent = {
 export const bannerItems = [
     {
         icon: recession,
-        title: 'Visibilidade',
+        title: '15%',
         description: 'de aumento do custo médio global de uma violação de dados em 3 anos. Em 2023 foi o prejuízo calculado foi de 4,45 milhões de dólares!'
     },
     {
         icon: up_arrow,
-        title: 'Segurança',
+        title: '3x',
         description: 'menos chances de sofrer uma violação de segurança caso sua empresa realize um teste de penetração.'
     },
     {
         icon: logout,
-        title: 'Controle',
+        title: '35%',
         description: 'das brechas envolvem algum tipo de falha técnica, como vulnerabilidades de software ou configurações inadequadas.'
     }
 ];

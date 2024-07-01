@@ -20,7 +20,7 @@ function Main() {
         linkContact={linkHeader}
         soluctionLinks={soluctionLinks}
         textColor={textColorHeader}
-        logoSize="w-15 h-16" />
+        logoSize="w-15 h-24 p-3" />
       <HomeMain bgColor={bgColorHome}
         title={homeTitle}
         subTitle={subTitle}

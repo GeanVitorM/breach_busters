@@ -9,7 +9,7 @@ const Methodologies = ({ content }) => {
 
   return (
     <div className="bg-[#38347c] py-16">
-      <div className="container mx-auto flex flex-col gap-6 px-8 lg:px-16">
+      <div className="m-48 mb-0 mt-0 flex flex-col gap-6 px-8 lg:px-16">
         {content.map((section, index) => {
           const isReverse = index % 2 !== 0;
           const isOpen = openIndex === index;
@@ -21,7 +21,6 @@ const Methodologies = ({ content }) => {
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               <div className="hidden md:flex w-full md:w-1/3 justify-center md:justify-start mb-4 md:mb-0 md:mr-4">
-                {/* Placeholder for potential future content */}
               </div>
               <div className="w-full md:w-2/3 bg-[#1A1A5C] p-6 rounded-lg shadow-lg">
                 <h3 
